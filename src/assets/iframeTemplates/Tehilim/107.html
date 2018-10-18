@@ -1,0 +1,417 @@
+<html><head>
+				<link rel='stylesheet' type='text/css' href='../css/stylesTorah.css'>
+			<script src='../js/myScript.js'></script>				
+			
+				</head>
+							<body class='theBody' onload='initClassesBasedOnCookies()'>
+						<div id='mySidenav' class='sidenav'>
+ 
+ 					<span class='trads'>
+					<span type='button' id='passukEn'  onClick="hideShow('passukEn',this)" class='button'>EN</span>
+					<span type='button' id='passukFr'  onClick="hideShow('passukFr',this)" class='button'>FR</span>					
+					</span>
+					<span class='pirushim'>
+					<span type='button' id='rashi' onClick="hideShow('rashi',this)" class='button'>רש"י</span><span type='button' id='mezudatDavid' onClick="hideShow('mezudatDavid',this)" class='button'>מצודת דוד</span><span type='button' id='mezudatZion' onClick="hideShow('mezudatZion',this)" class='button'>מצודת ציון</span><span type='button' id='malbim' onClick="hideShow('malbim',this)" class='button'>מלבי"ם</span></span>
+  
+					</div>
+					<span id='buttonNav' style='font-size:35px;cursor:pointer; position:fixed' onclick='openNav()'>&#9776;</span>
+		
+						<div class='theContent'  style="display:none"  onclick='closeNav()'><div class='newSefer'><div id='prakimHead' class='prakim'><span class='perekTitle' id='perekTitle0'><a  href='0.html'>לפני הקריאה</a></span><span class='perekTitle' id='perekTitle1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitle2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitle3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitle4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitle5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitle6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitle7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitle8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitle9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitle10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitle11'><a href='11.html'>11</a></span><span class='perekTitle' id='perekTitle12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitle13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitle14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitle15'><a href='15.html'>15</a></span><span class='perekTitle' id='perekTitle16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitle17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitle18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitle19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitle20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitle21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitle22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitle23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitle24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitle25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitle26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitle27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitle28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitle29'><a href='29.html'>29</a></span><span class='perekTitle' id='perekTitle30'><a href='30.html'>30</a></span><span class='perekTitle' id='perekTitle31'><a href='31.html'>31</a></span><span class='perekTitle' id='perekTitle32'><a href='32.html'>32</a></span><span class='perekTitle' id='perekTitle33'><a href='33.html'>33</a></span><span class='perekTitle' id='perekTitle34'><a href='34.html'>34</a></span><span class='perekTitle' id='perekTitle35'><a href='35.html'>35</a></span><span class='perekTitle' id='perekTitle36'><a href='36.html'>36</a></span><span class='perekTitle' id='perekTitle37'><a href='37.html'>37</a></span><span class='perekTitle' id='perekTitle38'><a href='38.html'>38</a></span><span class='perekTitle' id='perekTitle39'><a href='39.html'>39</a></span><span class='perekTitle' id='perekTitle40'><a href='40.html'>40</a></span><span class='perekTitle' id='perekTitle41'><a href='41.html'>41</a></span><span class='perekTitle' id='perekTitle42'><a href='42.html'>42</a></span><span class='perekTitle' id='perekTitle43'><a href='43.html'>43</a></span><span class='perekTitle' id='perekTitle44'><a href='44.html'>44</a></span><span class='perekTitle' id='perekTitle45'><a href='45.html'>45</a></span><span class='perekTitle' id='perekTitle46'><a href='46.html'>46</a></span><span class='perekTitle' id='perekTitle47'><a href='47.html'>47</a></span><span class='perekTitle' id='perekTitle48'><a href='48.html'>48</a></span><span class='perekTitle' id='perekTitle49'><a href='49.html'>49</a></span><span class='perekTitle' id='perekTitle50'><a href='50.html'>50</a></span><span class='perekTitle' id='perekTitle51'><a href='51.html'>51</a></span><span class='perekTitle' id='perekTitle52'><a href='52.html'>52</a></span><span class='perekTitle' id='perekTitle53'><a href='53.html'>53</a></span><span class='perekTitle' id='perekTitle54'><a href='54.html'>54</a></span><span class='perekTitle' id='perekTitle55'><a href='55.html'>55</a></span><span class='perekTitle' id='perekTitle56'><a href='56.html'>56</a></span><span class='perekTitle' id='perekTitle57'><a href='57.html'>57</a></span><span class='perekTitle' id='perekTitle58'><a href='58.html'>58</a></span><span class='perekTitle' id='perekTitle59'><a href='59.html'>59</a></span><span class='perekTitle' id='perekTitle60'><a href='60.html'>60</a></span><span class='perekTitle' id='perekTitle61'><a href='61.html'>61</a></span><span class='perekTitle' id='perekTitle62'><a href='62.html'>62</a></span><span class='perekTitle' id='perekTitle63'><a href='63.html'>63</a></span><span class='perekTitle' id='perekTitle64'><a href='64.html'>64</a></span><span class='perekTitle' id='perekTitle65'><a href='65.html'>65</a></span><span class='perekTitle' id='perekTitle66'><a href='66.html'>66</a></span><span class='perekTitle' id='perekTitle67'><a href='67.html'>67</a></span><span class='perekTitle' id='perekTitle68'><a href='68.html'>68</a></span><span class='perekTitle' id='perekTitle69'><a href='69.html'>69</a></span><span class='perekTitle' id='perekTitle70'><a href='70.html'>70</a></span><span class='perekTitle' id='perekTitle71'><a href='71.html'>71</a></span><span class='perekTitle' id='perekTitle72'><a href='72.html'>72</a></span><span class='perekTitle' id='perekTitle73'><a href='73.html'>73</a></span><span class='perekTitle' id='perekTitle74'><a href='74.html'>74</a></span><span class='perekTitle' id='perekTitle75'><a href='75.html'>75</a></span><span class='perekTitle' id='perekTitle76'><a href='76.html'>76</a></span><span class='perekTitle' id='perekTitle77'><a href='77.html'>77</a></span><span class='perekTitle' id='perekTitle78'><a href='78.html'>78</a></span><span class='perekTitle' id='perekTitle79'><a href='79.html'>79</a></span><span class='perekTitle' id='perekTitle80'><a href='80.html'>80</a></span><span class='perekTitle' id='perekTitle81'><a href='81.html'>81</a></span><span class='perekTitle' id='perekTitle82'><a href='82.html'>82</a></span><span class='perekTitle' id='perekTitle83'><a href='83.html'>83</a></span><span class='perekTitle' id='perekTitle84'><a href='84.html'>84</a></span><span class='perekTitle' id='perekTitle85'><a href='85.html'>85</a></span><span class='perekTitle' id='perekTitle86'><a href='86.html'>86</a></span><span class='perekTitle' id='perekTitle87'><a href='87.html'>87</a></span><span class='perekTitle' id='perekTitle88'><a href='88.html'>88</a></span><span class='perekTitle' id='perekTitle89'><a href='89.html'>89</a></span><span class='perekTitle' id='perekTitle90'><a href='90.html'>90</a></span><span class='perekTitle' id='perekTitle91'><a href='91.html'>91</a></span><span class='perekTitle' id='perekTitle92'><a href='92.html'>92</a></span><span class='perekTitle' id='perekTitle93'><a href='93.html'>93</a></span><span class='perekTitle' id='perekTitle94'><a href='94.html'>94</a></span><span class='perekTitle' id='perekTitle95'><a href='95.html'>95</a></span><span class='perekTitle' id='perekTitle96'><a href='96.html'>96</a></span><span class='perekTitle' id='perekTitle97'><a href='97.html'>97</a></span><span class='perekTitle' id='perekTitle98'><a href='98.html'>98</a></span><span class='perekTitle' id='perekTitle99'><a href='99.html'>99</a></span><span class='perekTitle' id='perekTitle100'><a href='100.html'>100</a></span><span class='perekTitle' id='perekTitle101'><a href='101.html'>101</a></span><span class='perekTitle' id='perekTitle102'><a href='102.html'>102</a></span><span class='perekTitle' id='perekTitle103'><a href='103.html'>103</a></span><span class='perekTitle' id='perekTitle104'><a href='104.html'>104</a></span><span class='perekTitle' id='perekTitle105'><a href='105.html'>105</a></span><span class='perekTitle' id='perekTitle106'><a href='106.html'>106</a></span><span class='perekTitle' id='perekTitle107'><a id='linkSelectedHead' class='linkSelected' href='107.html'>107</a></span><span class='perekTitle' id='perekTitle108'><a href='108.html'>108</a></span><span class='perekTitle' id='perekTitle109'><a href='109.html'>109</a></span><span class='perekTitle' id='perekTitle110'><a href='110.html'>110</a></span><span class='perekTitle' id='perekTitle111'><a href='111.html'>111</a></span><span class='perekTitle' id='perekTitle112'><a href='112.html'>112</a></span><span class='perekTitle' id='perekTitle113'><a href='113.html'>113</a></span><span class='perekTitle' id='perekTitle114'><a href='114.html'>114</a></span><span class='perekTitle' id='perekTitle115'><a href='115.html'>115</a></span><span class='perekTitle' id='perekTitle116'><a href='116.html'>116</a></span><span class='perekTitle' id='perekTitle117'><a href='117.html'>117</a></span><span class='perekTitle' id='perekTitle118'><a href='118.html'>118</a></span><span class='perekTitle' id='perekTitle119'><a href='119.html'>119</a></span><span class='perekTitle' id='perekTitle120'><a href='120.html'>120</a></span><span class='perekTitle' id='perekTitle121'><a href='121.html'>121</a></span><span class='perekTitle' id='perekTitle122'><a href='122.html'>122</a></span><span class='perekTitle' id='perekTitle123'><a href='123.html'>123</a></span><span class='perekTitle' id='perekTitle124'><a href='124.html'>124</a></span><span class='perekTitle' id='perekTitle125'><a href='125.html'>125</a></span><span class='perekTitle' id='perekTitle126'><a href='126.html'>126</a></span><span class='perekTitle' id='perekTitle127'><a href='127.html'>127</a></span><span class='perekTitle' id='perekTitle128'><a href='128.html'>128</a></span><span class='perekTitle' id='perekTitle129'><a href='129.html'>129</a></span><span class='perekTitle' id='perekTitle130'><a href='130.html'>130</a></span><span class='perekTitle' id='perekTitle131'><a href='131.html'>131</a></span><span class='perekTitle' id='perekTitle132'><a href='132.html'>132</a></span><span class='perekTitle' id='perekTitle133'><a href='133.html'>133</a></span><span class='perekTitle' id='perekTitle134'><a href='134.html'>134</a></span><span class='perekTitle' id='perekTitle135'><a href='135.html'>135</a></span><span class='perekTitle' id='perekTitle136'><a href='136.html'>136</a></span><span class='perekTitle' id='perekTitle137'><a href='137.html'>137</a></span><span class='perekTitle' id='perekTitle138'><a href='138.html'>138</a></span><span class='perekTitle' id='perekTitle139'><a href='139.html'>139</a></span><span class='perekTitle' id='perekTitle140'><a href='140.html'>140</a></span><span class='perekTitle' id='perekTitle141'><a href='141.html'>141</a></span><span class='perekTitle' id='perekTitle142'><a href='142.html'>142</a></span><span class='perekTitle' id='perekTitle143'><a href='143.html'>143</a></span><span class='perekTitle' id='perekTitle144'><a href='144.html'>144</a></span><span class='perekTitle' id='perekTitle145'><a href='145.html'>145</a></span><span class='perekTitle' id='perekTitle146'><a href='146.html'>146</a></span><span class='perekTitle' id='perekTitle147'><a href='147.html'>147</a></span><span class='perekTitle' id='perekTitle148'><a href='148.html'>148</a></span><span class='perekTitle' id='perekTitle149'><a href='149.html'>149</a></span><span class='perekTitle' id='perekTitle150'><a href='150.html'>150</a></span> <span class='perekTitle' id='perekTitle151'><a  href='151.html'>אחרי הקריאה</a></span></div></div><div class='seferContent'>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{א}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הֹד&#1443;וּ לַיהוָ&#1443;ה כִּי-ט&#1425;וֹב כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &quot;Rendez hommage &agrave; l&rsquo;&Eacute;ternel, car il est bon, car sa gr&acirc;ce dure &agrave; jamais!&quot;
+</div><div class='passukEn'> 'O give thanks unto the Lord, for He is good,
+For His mercy endureth for ever.'
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>הודו לה' : </b><small>(רש"י)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>הודו, </b> אחר שהזכיר קיבוץ גליות אומר כי השבים מן הגולה יזבחו זבחי תודה על כל הארבעה דברים שצריכים להודות ועל כולם <b>יודו לה' כי טוב, </b> ויודו חסדו אשר לעולם, ומבואר כי חסד יאמר על מה שעושה מבלי חיוב ומבלי הבטחה קודמת ואף שאין המקבל החסד ראוי לזה עפ''י מעשיו, וגם חסד אצל ה' במובנו המדויק בא על הנס למעלה מדרך הטבע, כמ''ש בסי' פ''ט ובכ''מ :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יֹ&#1453;אמְרוּ גְּאוּלֵ&#1443;י יְהוָ&#1425;ה אֲשֶׁ&#1445;ר גְּ&#1437;אָלָ&#1431;ם מִיַּד-צָֽר:</span>
+</div><div class='passukFr'> Qu&rsquo;ils parlent ainsi, ceux que l&rsquo;&Eacute;ternel a d&eacute;livr&eacute;s, qu&rsquo;il a d&eacute;livr&eacute;s de la main de l&rsquo;oppresseur,
+</div><div class='passukEn'>So let the redeemed of the Lord say,
+Whom He hath redeemed from the hand of the adversary;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;יאמרו גאולי ה'. כשיפדם מיד צר : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יאמרו גאולי ה'.</b> יאמרו הודו וגו' על אשר גאלם מיד צר : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(ב-ג) <b>יאמרו, </b> כן <b>יאמרו גאולי ה', </b> אשר הפליא עמהם חסדו בשני דברים, <u><b>א.</b></u> <b>אשר גאלם מיד צר, </b> <u><b>ב.</b></u> <b>שקבצם מארצות</b> והשיב נדחיהם <b>ממזרח וממערב ומצפון ומים, </b> היינו מאיי הים, ודרום לא חשב כי אין ישוב בדרום :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּֽמֵאֲרָצ&#1431;וֹת קִ&#1451;בְּצָ&#1445;ם מִמִּזְרָ&#1445;ח וּמִֽמַּעֲרָ&#1425;ב מִצָּפ&#1445;וֹן וּמִיָּֽם:</span>
+</div><div class='passukFr'> qu&rsquo;il a rassembl&eacute;s de tous les pays, de l&rsquo;Orient et du couchant, du Nord et de la mer.
+</div><div class='passukEn'>And gathered them out of the lands,
+From the east and from the west,
+From the north and from the sea.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ומארצות.</b> האנשים אשר קבצם מארצות המזרח וכו' לשוב למקומם : <b>ומים.</b> מאיי הים : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">תָּע&#1443;וּ בַ&#1453;מִּדְבָּר בִּישִׁימ&#1443;וֹן דָּ&#1425;רֶךְ עִ&#1445;יר מ&#1437;וֹשָׁ&#1431;ב לֹ&#1443;א מָצָֽאוּ:</span>
+</div><div class='passukFr'> Ils erraient dans le d&eacute;sert, par des chemins d&eacute;sol&eacute;s, sans trouver de ville habit&eacute;e.
+</div><div class='passukEn'>They wandered in the wilderness in a desert way;
+They found no city of habitation.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>תעו במדבר וגו'.</b> והולכי מדברות אף הם צריכין להודות שהרי פעמים שהם תועים ורעבים וצמאים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>תעו.</b> פעמים תעו במדבר שממה ולא מצאו דרך ההולך לעיר מיושבת : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(ד-ה) <b>תעו, </b> צייר כי בעת גלותם הלכו ונדדו דרך המדבר, ומשם באו <b>לישימון, </b> שהוא שמם יותר מן המדבר, ושם <b>תעו מני דרך ולא מצאו עיר מושב</b> והיו <b>רעבים, </b> ואח''כ היו גם <b>צמאים</b> כי המים אזל מכליהם עד שנפשם בהם תתעטף :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">רְעֵבִ&#1445;ים גַּם-צְמֵאִ&#1425;ים נַ&#1437;פְשָׁ&#1431;ם בָּהֶ&#1445;ם תִּתְעַטָּֽף:</span>
+</div><div class='passukFr'> Eprouv&eacute;s par la faim et la soif, ils sentaient leur &acirc;me d&eacute;faillir en eux.
+</div><div class='passukEn'>Hungry and thirsty,
+Their soul fainted in them.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>רעבים.</b> יהיו רעבים וצמאים מחסרון לחם ומים : <b>תתעטף.</b> כשאדם הוא בצרה הוא מדוכא וכפוף וכאלו הוא עטוף קצתו בקצתו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּצְעֲק&#1443;וּ אֶל-יְ&#1453;הוָה בַּצַּ&#1443;ר לָהֶ&#1425;ם מִ&#1437;מְּצֽוּקוֹתֵיהֶ&#1431;ם יַצִּילֵֽם:</span>
+</div><div class='passukFr'> Mais ils cri&egrave;rent vers l&rsquo;&Eacute;ternel dans leur d&eacute;tresse: il les sauva de leurs angoisses.
+</div><div class='passukEn'>Then they cried unto the Lord in their trouble,
+And He delivered them out of their distresses.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בצר להם.</b> בעת הים צר להם : <b>ממצוקותיהם.</b> הציל אותם מן מצוקה ההיא : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>ויצעקו, </b> במדבר ובים אמר <b>ויצעקו, </b> ובחולה ובית האסורים אמר <b>ויזעקו, </b> כי צעקה גדולה מזעקה, וכן אמר בשני אלה <b>יצילם, </b> ובחולה ומאסר אמר <b>יושיעם, </b> כי הצלה גדולה מישועה, כי סכנת הים והמדבר גדולה יותר מחולי ומאסר :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַ&#1453;יַּֽדְרִיכֵם בְּדֶ&#1443;רֶךְ יְשָׁרָ&#1425;ה לָ&#1437;לֶ&#1431;כֶת אֶל-עִ&#1445;יר מוֹשָֽׁב:</span>
+</div><div class='passukFr'> Il les guida par une route toute droite pour les amener dans une ville habit&eacute;e.
+</div><div class='passukEn'>And He led them by a straight way, 
+That they might go to a city of habitation.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וידריכם.</b> וינהגם לפיכך יודו לה' חסדו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וידריכם.</b> נתן בלבם לדרוך בדרך ישרה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>וידריכם.</b> ענין הלוך : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>וידריכם, </b> ועשה להם נס במה שהראה להם דרך ישרה שיגיעו לעיר מושב :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יוֹד&#1443;וּ לַיהוָ&#1443;ה חַסְדּ&#1425;וֹ וְ&#1437;נִפְלְאוֹתָ&#1431;יו לִבְנֵ&#1445;י אָדָֽם:</span>
+</div><div class='passukFr'> Qu&rsquo;ils rendent gr&acirc;ce &agrave; l&rsquo;&Eacute;ternel pour sa bont&eacute;, pour ses miracles en faveur des hommes!
+</div><div class='passukEn'>Let them give thanks unto the Lord for His mercy,
+And for His wonderful works to the children of men!
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יודו.</b> האנשים ההם יודו לה' חסדו ויספרו נפלאותיו לבני אדם לפרסם הנס : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(ח-ט) <b>יודו, </b> אז מחוייבים להודות, <u><b>א.</b></u> מצד <b>החסד</b> שעשה עמהם, <u><b>ב.</b></u> מצד הנס <b>והפלא, </b> שהגם שאין זה פלא בערך ה', הוא פלא בערך בני אדם <b>כי השביע נפש שוקקה</b> נגד צמאים, <b>ונפש רעבה מלא טוב</b> נגד רעבים :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּי-הִ&#1453;שְׂבִּיעַ נֶ&#1443;פֶשׁ שֹׁקֵקָ&#1425;ה וְנֶ&#1445;פֶשׁ רְ&#1437;עֵבָה מִלֵּא-טֽוֹב:</span>
+</div><div class='passukFr'> Car il rassasia l&rsquo;&acirc;me ext&eacute;nu&eacute;e, et remplit de d&eacute;lices l&rsquo;&acirc;me affam&eacute;e.
+</div><div class='passukEn'>For He hath satisfied the longing soul,
+And the hungry soul He hath filled with good.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי השביע.</b> בעבור כי השביע נפש המתאוה בהיותו תועה : <b>מלא טוב.</b> כאשר באו אל עיר מושב : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>שוקקה.</b> ענין תאוה כמו ונפשו שוקקה (ישעיה כט) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור המלות&nbsp;</small></b>&nbsp;<b>שוקקה. </b> מתאוה משקה, וכן ישעיה (כ''ט ח') ועמש''ש (ל''ג ד') :<small>(מלבי"ם באור המלות)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{י}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יֹ&#1453;שְׁבֵי חֹ&#1443;שֶׁךְ וְצַלְמָ&#1425;וֶת אֲסִירֵ&#1430;י עֳנִ&#1443;י וּבַרְזֶֽל:</span>
+</div><div class='passukFr'> [Il en est] qui demeuraient dans les t&eacute;n&egrave;bres et les ombres de la mort, encha&icirc;n&eacute;s dans la mis&egrave;re et des liens de fer;
+</div><div class='passukEn'>Such as sat in darkness and in the shadow of death,
+Being bound in affliction and iron&mdash;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>יושבי חשך וצלמות.</b> אף האסורים בבית הסוהר צריכים להודות כשיוצאין מבית אסוריהם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יושבי.</b> האנשים היושבים במקום חושך והמה אסורים בקשרים המענים ובכבלי ברזל : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>וצלמות.</b> צלו של מות והוא ענין חושך כחשכת הקבר : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>יושבי, </b> אולם בעת שבאו לעיר מושב ונצולו מסכנת המדבר, באו לסכנה אחרת ששם התעוללו עליהם עלילות ברשע והושלכו לבית האסורים, כמ''ש כאשר ינוס איש מפני הארי וכו', ושם מר להם, <u><b>א.</b></u> מצד המקום, שנכלאו שם בחשך וצלמות, <u><b>ב.</b></u> מצד שהם <b>אסורים בעני</b> שמענים אותם בענוים <b>וכבלי ברזל</b> לבל יברחו :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-הִמְר&#1445;וּ אִמְרֵי-אֵ&#1425;ל וַעֲצַ&#1430;ת עֶלְי&#1443;וֹן נָאָֽצוּ:</span>
+</div><div class='passukFr'> parce qu&rsquo;ils s&rsquo;&eacute;taient insurg&eacute;s contre les paroles de Dieu, et avaient m&eacute;pris&eacute; les desseins du Tr&egrave;s-Haut.
+</div><div class='passukEn'>Because they rebelled against the words of God,
+And contemned the counsel of the Most High.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כי המרו אמרי אל.</b> אין פורענות באה על האדם אלא בעונו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי המרו.</b> וגמול העונש בא על כי המרו אמרי אל : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>המרו.</b> מלשון מרי ומרד : <b>נאצו.</b> ענין בזיון : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>כי, </b> ובאר שמה שבאה עליהם הרעה השנית, (אחר שעשה להם נס מרעה הראשונה), זה היה ע''י מה שאחר שנעשה להם נס ונצולו מן המדבר שבו על קיאם <b>והמרו אמרי אל, </b> ובזה <b>נאצו עצת עליון, </b> שמה שיעץ לעשות להם נס היה כדי שעי''כ ישובו אליו וישמרו מצותיו והם לא כן עשו, ולכן.<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיַּכְנַ&#1443;ע בֶּעָמָ&#1443;ל לִבָּ&#1425;ם כָּ&#1437;שְׁל&#1431;וּ וְאֵ&#1443;ין עֹזֵֽר:</span>
+</div><div class='passukFr'> Il avait accabl&eacute; leur c&oelig;ur de maux; ils avaient tr&eacute;buch&eacute;, sans personne pour les secourir.
+</div><div class='passukEn'>Therefore He humbled their heart with travail,
+They stumbled, and there was none to help&mdash;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויכנע.</b> ולכן הכניע לבם בעמל המאסר וכשלו בצרה ולא מצאו עוזר : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>הכניע את לבם</b> לתשובה ע''י <b>העמל, </b> ולכן <b>כשלו</b> הזמין ה' לפניהם מכשול שינתנו בבית האסורים, ועל ידי <b>שאין עוזר, </b> ע''י כך. (יג-יד) <b>ויזעקו אל ה'</b> ויחזרו בתשובה, ואז <b>יוציאם מחשך וצלמות</b> וגם ינתק מוסרותיהם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּזְעֲק&#1443;וּ אֶל-יְ&#1453;הוָה בַּצַּ&#1443;ר לָהֶ&#1425;ם מִ&#1437;מְּצֻֽקוֹתֵיהֶ&#1431;ם יוֹשִׁיעֵֽם:</span>
+</span>
+</div><div class='passukFr'> Mais ils cri&egrave;rent vers l&rsquo;&Eacute;ternel dans leur d&eacute;tresse: il les sauva de leurs angoisses.
+</div><div class='passukEn'>They cried unto the Lord in their trouble,
+And He saved them out of their distresses.
+</div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">י&#1453;ֽוֹצִיאֵם מֵחֹ&#1443;שֶׁךְ וְצַלְמָ&#1425;וֶת וּמוֹסְר&#1430;וֹתֵיהֶ&#1443;ם יְנַתֵּֽק:</span>
+</div><div class='passukFr'> Il les retira des t&eacute;n&egrave;bres, des ombres de la mort, et rompit leurs liens.
+</div><div class='passukEn'>He brought them out of darkness and the shadow of death,
+And broke their bands in sunder. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ינתק.</b> יעתק מהם קשרי מאסרם ר''ל פטרם ממאסרם כאלו העתיק הקשרים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ומוסרותיהם.</b> ענין קשור הרצועות : <b>ינתק.</b> ענין העתק כמו נתקתי מוסרותיך (ירמיה ב) : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יוֹד&#1443;וּ לַיהוָ&#1443;ה חַסְדּ&#1425;וֹ וְ&#1437;נִפְלְאוֹתָ&#1431;יו לִבְנֵ&#1445;י אָדָֽם:</span>
+</div><div class='passukFr'> Qu&rsquo;ils rendent gr&acirc;ce &agrave; l&rsquo;&Eacute;ternel pour sa bont&eacute;, pour ses miracles en faveur des hommes!
+</div><div class='passukEn'>Let them give thanks unto the Lord for His mercy,
+And for His wonderful works to the children of men!
+</div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(טו-טז) <b>יודו, </b> ועי''כ מחויבים להודות שנית על הנס השני, כי שבר דלתות נחשת :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-שִׁ&#1453;בַּר דַּלְת&#1443;וֹת נְחֹ&#1425;שֶׁת וּבְרִיחֵ&#1430;י בַרְזֶ&#1443;ל גִּדֵּֽעַ:</span>
+</div><div class='passukFr'> Car il a bris&eacute; des portes d&rsquo;airain, abattu des verrous de fer.
+</div><div class='passukEn'>For He hath broken the gates of brass,
+And cut the bars of iron in sunder.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כי שבר דלתות נחשת.</b> שהיו נעולים בפניהם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי שבר.</b> על כי שבר וכו' ר''ל הוציאם ממאסרם כאלו שבר דלתות בית הסוהר וגדע הבריחים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ובריחי.</b> כעין מטה לרוחב הדלתות לסגרם : <b>גדע.</b> ענין כריתה כמו שקמים גדעו (ישעיה ט) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור המלות&nbsp;</small></b>&nbsp;<b>דלתות נחושת ובריחי ברזל. </b> וכן ישעיה (מ''ה ד') :<small>(מלבי"ם באור המלות)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֱ&#1453;וִלִים מִדֶּ&#1443;רֶךְ פִּשְׁעָ&#1425;ם וּ&#1437;ֽמֵעֲוֹֽנֹתֵיהֶ&#1431;ם יִתְעַנּֽוּ:</span>
+</div><div class='passukFr'> [D&rsquo;autres] se montr&egrave;rent insens&eacute;s par leur conduite criminelle, et furent accabl&eacute;s sous le poids de leurs fautes.
+</div><div class='passukEn'>Crazed because of the way of their transgression,
+And afflicted because of their iniquities&mdash;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אוילים מדרך פשעם.</b> אשר מעונותיהם יתענו ביסורי חלאים אף הם מן הצריכין להודות, יש סמניות בפ' זו (כלומר כתיבות שש נוני''ן הפוכין) ובאין לידרש במקום אכין ורקין למעט, לומר צעקו קודם גזר דין נענין לאחר גזר דין אינם נענין : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אוילים.</b> האנשים אוילים אשר מחטא דרך פשעם ומעונותיהם המה מעונים בחלי ומכאוב : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>אוילים.</b> ר''ל חוטאים : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>אוילים, </b> האויל הוא המסתפק ואינו מאמין שמה שהיה בסכנה ויצא ממנה הכל היה מאת ה', ותולים הכל במקרה, וזה בא או <b>מדרך פשעם, </b> מפני שכבר הורגלו בפשעים עד שאין לבם מוכן לקבל חקי המוסר, או <b>מעונותיהם</b> ע''י עוות השכל והמינות, אלה האוילים שעדן עומדים באולתם <b>יתענו</b> יכניעם ה' שלישית ע''י חולי :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כָּל-אֹ&#1453;כֶל תְּתַעֵ&#1443;ב נַפְשָׁ&#1425;ם וַ&#1437;יַּגִּ&#1431;יעוּ עַד-שַׁ&#1445;עֲרֵי מָֽוֶת:</span>
+</div><div class='passukFr'> Leur &acirc;me &eacute;prouvait du d&eacute;go&ucirc;t pour toute nourriture; ils &eacute;taient arriv&eacute;s jusqu&rsquo;aux portes de la mort.
+</div><div class='passukEn'>Their soul abhorred all manner of food,
+And they drew near unto the gates of death&mdash;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>תתעב.</b> כדרך החולה הממאס באכילה : <b>ויגיעו.</b> קרובים המה למות : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>כל אוכל, </b> שכמו שהיו חולים חולי הנפש ולא קבלו מאכל בריאה לרפואתם, כן <b>תתעב נפשם כל אוכל</b> המזין את הגוף, <b>ויגעו עד שערי מות, </b> והם בצרה פעם שלישית :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּזְעֲק&#1443;וּ אֶל-יְ&#1453;הוָה בַּצַּ&#1443;ר לָהֶ&#1425;ם מִ&#1437;מְּצֻֽקוֹתֵיהֶ&#1431;ם יוֹשִׁיעֵֽם:</span>
+</div><div class='passukFr'> Mais ils cri&egrave;rent vers l&rsquo;&Eacute;ternel dans leur d&eacute;tresse: il les sauva de leurs angoisses.
+</div><div class='passukEn'>They cried unto the Lord in their trouble,
+And He saved them out of their distresses;
+</div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(יט-כ) <b>ויזעקו</b> ויחזרו בתשובה, <b>ישלח דברו וירפאם</b> בגוף <b>וימלט</b> משחיתותם בנפש :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יִשְׁלַ&#1443;ח דְּ&#1453;בָרוֹ וְיִרְפָּאֵ&#1425;ם וִ&#1437;ֽימַלֵּ&#1431;ט מִשְּׁחִיתוֹתָֽם:</span>
+</div><div class='passukFr'> Il envoya sa parole pour les gu&eacute;rir, et les faire &eacute;chapper de leurs tombeaux.
+</div><div class='passukEn'>He sent His word, and healed them,
+And delivered them from their graves.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ישלח דברו.</b> לא כרפואת הרופאים שהמה בסממנים כ''א מרפא במאמרו : <b>משחיתותם.</b> משחת הקבר שהיה קרוב להם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>משחיתותם.</b> מל' שחת ובור : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יוֹד&#1443;וּ לַיהוָ&#1443;ה חַסְדּ&#1425;וֹ וְ&#1437;נִפְלְאוֹתָ&#1431;יו לִבְנֵ&#1445;י אָדָֽם:</span>
+</div><div class='passukFr'> Qu&rsquo;ils rendent gr&acirc;ce &agrave; l&rsquo;&Eacute;ternel pour sa bont&eacute;, pour ses miracles en faveur des hommes!
+</div><div class='passukEn'>Let them give thanks unto the Lord for His mercy,
+And for His wonderful works to the children of men!
+</div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(כא-כב) <b>יודו וכו' ויזבחו, </b> הנה בשתי פעמים הראשונים לא הזכיר רק שיודו על הנס הפרטי שנעשה להם עתה, הגם שהדין הוא שמי שנעשה לו שני נסים כשמברך על נס אחד צריך לברך גם על השני כמ''ש בפרק הרואה, והיה ראוי שהיוצא מבית האסורים יזכיר גם נס הצלת המדבר, אולם הוא לא הכיר עדיין חסדי ה', כמ''ש אוילים מדרך פשעם, ולא הודה רק על הדבר שניצל ממנו בשעתו, ועתה שניצל זה שלשה פעמים, <b>יודו לה' חסדו ויספרו מעשיו, </b> שיספר גם הנסים הראשונים, וכן עד עתה לא הביאו עדיין זבח תודה, ועתה <b>יזבחו זבחי תודה</b> זבחים רבים, גם בעד הפעמים הראשונים שלא השלימו הודאתם כראוי, ויספרו כל הג' נסים ביחד :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְ&#1453;יִזְבְּחוּ זִבְחֵ&#1443;י תוֹדָ&#1425;ה וִֽיסַפְּר&#1430;וּ מַעֲשָׂ&#1443;יו בְּרִנָּֽה:</span> <b>(פ)</b>
+</div><div class='passukFr'> Qu&rsquo;ils immolent des sacrifices de reconnaissance et racontent ses &oelig;uvres dans des chants joyeux!
+</div><div class='passukEn'>And let them offer the sacrifices of thanksgiving,
+And declare His works with singing.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>זבחי תודה.</b> קרבן תודה הבא על הנס : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יוֹרְדֵ&#1443;י הַ&#1453;יָּם בָּאֳנִיּ&#1425;וֹת עֹשֵׂ&#1445;י מְ&#1437;לָאכָ&#1431;ה בְּמַ&#1443;יִם רַבִּֽים:</span>
+</div><div class='passukFr'> [D&rsquo;autres] voguaient sur la mer dans des navires, faisaient leur besogne dans l&rsquo;immensit&eacute; des eaux;
+</div><div class='passukEn'>They that go down to the sea in ships,
+That do business in great waters&mdash;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יורדי הים.</b> האנשים היורדים בים בספינות (ועל כי שפת הים הוא ממעל וממנו יורדים למטה אל הים לזה אמר יורדי הים) : <b>עושי מלאכה.</b> היא תחבולת הפנות האניה אל המקום הנרצה : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>יורדי, </b> עתה מצייר שאחר ששבו מגלותם והלכו דרך הים באניות הראם ה' נפלאותיו עוד הפעם, למען יודו לה' חסדו בבואם לארצם, ובאר כי יש בזה שני ענינים, <u><b>א.</b></u> <b>יורדי הים באניות, </b> <u><b>ב.</b></u> יש מהם אשר המה <b>עושי מלאכה במים רבים, </b> שיודעים תחבולות ומלאכות להעמיד את האניה בעת הסער ולהנצל :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הֵ&#1443;מָּה רָ&#1453;אוּ מַעֲשֵׂ&#1443;י יְהוָ&#1425;ה וְ&#1437;נִפְלְאוֹתָ&#1431;יו בִּמְצוּלָֽה:</span>
+</div><div class='passukFr'> Ils voyaient, ceux-l&agrave;, les &oelig;uvres de l&rsquo;&Eacute;ternel, ses merveilles dans les profondeurs de l&rsquo;oc&eacute;an.
+</div><div class='passukEn'>These saw the works of the Lord,
+And His wonders in the deep;
+</div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>במצולה.</b> עומק הים : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֹּ&#1431;אמֶר וַ&#1453;ֽיַּעֲמֵד ר&#1443;וּחַ סְעָרָ&#1425;ה וַתְּרוֹמֵ&#1445;ם גַּלָּֽיו:</span>
+</div><div class='passukFr'> Il parlait, et faisait souffler un vent de temp&ecirc;te qui soul&egrave;ve les vagues.
+</div><div class='passukEn'>For He commanded, and raised the stormy wind,
+Which lifted up the waves thereof;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויאמר.</b> כאשר אמר ה' תעמוד רוח סערה והיא תרומם גלי הים : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>ויאמר</b> ויעמד רוח סערה, והרוח תרומם את גלי הים :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יַעֲל&#1443;וּ שָׁ&#1453;מַיִם יֵרְד&#1443;וּ תְהוֹמ&#1425;וֹת נַ&#1437;פְשָׁ&#1431;ם בְּרָעָ&#1445;ה תִתְמוֹגָֽג:</span>
+</div><div class='passukFr'> Ils montaient jusqu&rsquo;au ciel, descendaient dans les ab&icirc;mes; leur &acirc;me se fondait dans la souffrance.
+</div><div class='passukEn'>They mounted up to the heaven, they went down to the deeps;
+Their soul melted away because of trouble;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יעלו שמים.</b> אנשי הספינה עולים למעלה לצד השמים וחוזרים ויורדים עד התהום כי הגלים מגביהים הספינה למעלה ואח''ז מורידים אותה למטה עם אנשיה : <b>ברעה.</b> ברעת הפחד תמוג נפשם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>תתמוגג.</b> מלשון המגה והמסה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>יעלו, </b> ובזה היורדים באניות פשוטים הם <b>יעלו שמים וירדו תהומות, </b> כי כל גל ירומם את הספינה למעלה ואח''כ תרד למטה :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יָח&#1443;וֹגּוּ וְ&#1453;יָנוּעוּ כַּשִּׁכּ&#1425;וֹר וְכָל-חָ&#1437;כְמָתָ&#1431;ם תִּתְבַּלָּֽע:</span>
+</div><div class='passukFr'> Ils dansaient, ils titubaient comme l&rsquo;homme ivre; toute leur sagesse &eacute;tait r&eacute;duite &agrave; n&eacute;ant.
+</div><div class='passukEn'>They reeled to and fro, and staggered like a drunken man,
+And all their wisdom was swallowed up&mdash;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>יחוגו.</b> לשון שבר הוא וכן בחגוי הסלע (שה''ש ב') וכן והיתה אדמת יהודה למצרים לחגא (ישעיה י''ט) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יחוגו.</b> והמה נעים ונדים בתוך הספינה בעבור גודל תנועת הספינה עד שא''א לעמוד במקום עמדם וכדרך השכור : <b>וכל חכמתם.</b> אשר למדו והשכילו בהנהגת הספינה כל החכמה יהיה נשחת כי לא יועילו בחכמה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יחוגו.</b> ענין רקוד ותנועה חזקה כמו המון חוגג (לעיל מב) : <b>תתבלע.</b> ענין השחתה כמו בלע ה' ולא חמל (איכה ב') : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>יחוגו, </b> ואלה שעושים מלאכה במים רבים הם יעמידו את הספינה ע''י שמשליכים הברזל לתוך הים שאז לא תתרומם הספינה בגובה אבל אז <b>יחוגו וינועו כשכור</b> הנה והנה במקום עמידתם, <b>וכל חכמתם תתבלע</b> כי האניה חשבה להשבר במקומה :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּצְעֲק&#1443;וּ אֶל-יְ&#1453;הוָה בַּצַּ&#1443;ר לָהֶ&#1425;ם וּ&#1437;ֽמִמְּצֽוּקֹתֵיהֶ&#1431;ם יוֹצִיאֵֽם:</span>
+</div><div class='passukFr'> Mais ils cri&egrave;rent vers l&rsquo;&Eacute;ternel dans leur d&eacute;tresse: il les sauva de leurs angoisses.
+</div><div class='passukEn'>They cried unto the Lord in their trouble,
+And He brought them out of their distresses.
+</div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(כח-כט) <b>ויצעקו וכו' יקם סערה לדממה, </b> ר''ל שלהראות נפלאותיו יקים את הסערה בהפלגה רבה, והגיעו לתכלית הרעש פתאום יהיו לדממה <b>והגלים יחשו, </b> להודיע כי יד ה' עשתה זאת :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יָקֵ&#1443;ם סְ&#1453;עָרָה לִדְמָמָ&#1425;ה וַ&#1437;יֶּחֱשׁ&#1431;וּ גַּלֵּיהֶֽם:</span>
+</div><div class='passukFr'> Il transforma l&rsquo;ouragan en une brise l&eacute;g&egrave;re, et les vagues apais&egrave;rent leur fureur.
+</div><div class='passukEn'>He made the storm a calm,
+So that the waves thereof were still.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יקם סערה לדממה.</b> ר''ל הסערה שהקים ישיבנה לדממה וגלי הים לא יהמו עוד : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>לדממה.</b> ענין שתיקה כמו קול דממה (מ''א יט) : <b>ויחשו.</b> ענין שתיקה כמו עת לחשות (קהלת ג') : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור המלות&nbsp;</small></b>&nbsp;(כט-ל) <b>דממה, ויחשו, ישתוקו. </b> הדממה מציין ההפסקה מן הדבור או הרעש קודם לו, לא כן חשה מציין העדר הדבור או הסער לבד (ישעיה ס''ב ו'), ושתק מציין השתיקה שהוא הפך הריב או הרעש הגדול, באין נרגן ישתק מדון, וישתק הים מזעפו, שהשמחה תגדל כפי שהיה גדול הרעש תחלה, ובדברי חז''ל כולל במלת שתיקה העדר הדבור לבד כמלת חשה בלשון המקרא. <b>מחוז, גבול. </b> כמו עם שאול עשינו חוזה :<small>(מלבי"ם באור המלות)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ל}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּשְׂמְח&#1445;וּ כִֽי-יִשְׁתֹּ&#1425;קוּ וַ&#1437;יַּנְחֵ&#1431;ם אֶל-מְח&#1445;וֹז חֶפְצָֽם:</span>
+</div><div class='passukFr'> Ce fut une joie pour eux de voir rena&icirc;tre le calme; Dieu les conduisit au terme d&eacute;sir&eacute; de leur voyage.
+</div><div class='passukEn'>Then were they glad because they were quiet,
+And He led them unto their desired haven.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וישמחו כי ישתקו.</b> הגלים : <b>וינחם.</b> וינהגם : <b>מחוז.</b> לשון גבול, ומנחם חברו עם וחזותכם את שאול (שם כ''ח) גבולינו שלא יכנס בגבולינו וכן מחזה אל מחזה שלש פעמים (מלכים א ז') בתנחומא, מצאתי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וישמחו.</b> אנשי הספינה ישמחו כאשר ישתוקו הגלים : <b>וינחם.</b> והמקום ינהגם אל הגבול אשר חפצו ללכת אליו : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>מחוז.</b> גבול וכן עם שאול עשינו חוזה (ישעיה כח) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>וישמחו, </b> ובזה תגדל שמחתם, <u><b>א.</b></u> במה <b>שישתקו</b> הגלים, <u><b>ב.</b></u> במה <b>שינחם אל מחוז חפצם</b> בלא פגע :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יוֹד&#1443;וּ לַיהוָ&#1443;ה חַסְדּ&#1425;וֹ וְ&#1437;נִפְלְאוֹתָ&#1431;יו לִבְנֵ&#1445;י אָדָֽם:</span>
+</div><div class='passukFr'> Qu&rsquo;ils rendent gr&acirc;ce &agrave; l&rsquo;&Eacute;ternel pour sa bont&eacute;, pour ses miracles en faveur des hommes!
+</div><div class='passukEn'>Let them give thanks unto the Lord for His mercy,
+And for His wonderful works to the children of men!
+</div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(לא-לב) <b>יודו, וירוממוהו, </b> כי בהגיעם לארצם שם יודו במקהלות רבבות אלפי ישראל בארץ ולפני הזקנים הנמצאים שמה, ויש הבדל בין הרוממות והתהלה, <b>הרוממות</b> היא מצד מעשיו הנסתרים, וזה <b>להמון עם</b> הבלתי מכירים את ה' הוא מרומם בעיניהם, <b>והתהלה</b> הוא מצד מעשיו הגלוים, וזה <b>במושב זקנים</b> ותלמידי חכמים המכירים מעשיו, וכמ''ש חז''ל צריך לאודויי באפי עשרה ותרין מנייהו רבנן :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וִ&#1453;ֽירֹמְמוּהוּ בִּקְהַל-עָ&#1425;ם וּבְמוֹשַׁ&#1430;ב זְקֵנִ&#1443;ים יְהַלְלֽוּהוּ:</span>
+</div><div class='passukFr'> Qu&rsquo;ils l&rsquo;exaltent dans l&rsquo;assembl&eacute;e du peuple, proclament ses louanges dans le conseil des anciens!
+</div><div class='passukEn'>Let them exalt Him also in the assembly of the people,
+And praise Him in the seat of the elders. 
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וירוממוהו בקהל עם.</b> צריך לאודויי באפי בי עשרה : <b>ובמושב זקנים.</b> ותרין מנייהו צורבא מרבנן : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בקהל עם.</b> בקבוץ עם רב : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יָשֵׂ&#1443;ם נְהָר&#1443;וֹת לְמִדְבָּ&#1425;ר וּמֹצָ&#1445;אֵי מַ&#1437;&#1431;יִם לְצִמָּאֽוֹן:</span>
+</div><div class='passukFr'> Il changea les fleuves en d&eacute;sert, en une terre alt&eacute;r&eacute;e les sources jaillissantes,
+</div><div class='passukEn'>He turneth rivers into a wilderness,
+And watersprings into a thirsty ground;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ישם נהרות למדבר.</b> כלומר נותן יישובי האומות לחרבן : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ישם נהרות.</b> ר''ל מלבד הנסים האלה יעשה עוד פלאות דבר וחלופו כי ישם נהרות להיות מקום יובש כמדבר : <b>ומוצאי וגו'.</b> כפל הדבר במ''ש : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>לצמאון.</b> למקום צמא ויובש : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(לג-לד) <b>ישם, </b> אחר שדבר על חסדי ה' עם אנשים יחידים ידבר על השגחתו הנראית בכוללים, בין על מדינות שלמות בין על כתות אנשים. הנה נראה לפעמים שע''י רעת היושבים יחריב ארצות הישוב, ומקום שהיה שם <b>נהרות ישים</b> אותם <b>כמדבר, </b> והמעינות שמשם היה <b>מוצאי מים</b> אל הנהרות <b>ישים לצמאון, </b> ועי''כ יהפך <b>ארץ פרי למלחה, </b> וכ''ז ע''י <b>רעת יושבי בה</b> :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֶ&#1443;רֶץ פְּ&#1453;רִי לִמְלֵחָ&#1425;ה מֵ&#1437;רָעַ&#1431;ת יֹ&#1443;שְׁבֵי בָֽהּ:</span>
+</div><div class='passukFr'> un sol plantureux en une plage de sel, &agrave; cause de la m&eacute;chancet&eacute; de ses habitants.
+</div><div class='passukEn'>A fruitful land into a salt waste,
+For the wickedness of them that dwell therein.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>למלחה.</b> להיות כארץ מלחה מעשות פרי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ארץ פרי.</b> ואז הארץ העושה פרי תהיה נהפך להיות עפרה מלוח בל יעשה פרי : <b>מרעת.</b> ר''ל לא על חנם יעשה זאת כ''א בעבור רעת יושביה וגמולם הוא משלם : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור המלות&nbsp;</small></b>&nbsp;(לד-לה) <b>מדבר, ארץ ציה. </b> עי' ישעיה ל''ה, ירמיה ב' ו', וע''ל ק''ז ד'. <b>ומוצאי מים. </b> הם מעינות ומקורות. <b>למלחה. </b> לארץ מלחה (ירמיה י''ז) :<small>(מלבי"ם באור המלות)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יָשֵׂ&#1443;ם מִ&#1453;דְבָּר לַֽאֲגַם-מַ&#1425;יִם וְאֶ&#1445;רֶץ צִ&#1437;יָּ&#1431;ה לְמֹצָ&#1445;אֵי מָֽיִם:</span>
+</div><div class='passukFr'> Il changea le d&eacute;sert en un pays de lacs, en sources jaillissantes une terre dess&eacute;ch&eacute;e.
+</div><div class='passukEn'>He turneth a wilderness into a pool of water,
+And a dry land into watersprings.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ישם מדבר לאגם מים.</b> נותן יישוב חרב לבניין ומחזירו לקדמותו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ישם מדבר.</b> מקום יובש כמדבר ישים למקום אגמי מים : <b>וארץ ציה.</b> כפל הדבר במ''ש : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>לאגם.</b> שם מקום כניסת המים : <b>ציה.</b> שממה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>ישם, </b> וכן נראה בהפך שלפעמים ישים את המדבר לאגם מים, וארץ ציה שהיא יבשה יותר מן המדבר תהיה למוצאי מים, שמשם יצאו מקורות מים שעל ידם תהיה המדבר לאגם מים :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיּ&#1443;וֹשֶׁב שָׁ&#1443;ם רְעֵבִ&#1425;ים וַ&#1437;יְכוֹנְנ&#1431;וּ עִ&#1443;יר מוֹשָֽׁב:</span>
+</div><div class='passukFr'> L&agrave; il &eacute;tablit des gens &eacute;prouv&eacute;s par la faim, pour y fonder une ville populeuse.
+</div><div class='passukEn'>And there He maketh the hungry to dwell,
+And they establish a city of habitation;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויושב שם.</b> ובמקום ההוא מושיב אנשים שהיו רעבים עד הנה מבלי מצוא מקום להחיות נפשם : <b>ויכוננו.</b> והם יכוננו את המקום ההוא להיות עיר מושב לבל תחסר כל בה : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(לו-לח) <b>ויושב שם רעבים</b> והם <b>יכוננו</b> שם <b>עיר מושב, </b> וגם <b>יזרעו</b> שם <b>שדות ויטעו כרמים, </b> ונגד מ''ש שיזרעו שדות, אמר <b>ויעשו פרי תבואה, </b> שהשדות והכרמים יעשו פרי נגמר לא בוסר, ונגד מ''ש ויכוננו ער מושב אמר <b>ויברכם וירבו מאד, </b> שיברכם בנכסים, וירבו בבנים ובבנות, וגם בהמתם לא ימעיט :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּזְרְע&#1443;וּ שָׂ&#1453;דוֹת וַיִּטְּע&#1443;וּ כְרָמִ&#1425;ים וַ&#1437;יַּעֲשׂ&#1431;וּ פְּרִ&#1443;י תְבֽוּאָה:</span>
+</div><div class='passukFr'> Ils ensemencent des champs, plantent des vignes, qui portent d&rsquo;abondantes r&eacute;coltes.
+</div><div class='passukEn'>And sow fields, and plant vineyards,
+Which yield fruits of increase.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויעשו.</b> השדות והכרמים : <b>פרי תבואה.</b> הכרמים יעשו פרי והשדות תבואה : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור המלות&nbsp;</small></b>&nbsp;<b>פרי תבואה. </b> פרי נגמר ששם תבואה מורה שנגמר הפרי כמ''ש ס' התורה פ' קדושים :<small>(מלבי"ם באור המלות)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיְבָרֲכֵ&#1443;ם וַיִּרְבּ&#1443;וּ מְאֹ&#1425;ד וּ&#1437;בְהֶמְתָּ&#1431;ם לֹ&#1443;א יַמְעִֽיט:</span>
+</span>
+</div><div class='passukFr'> Il les b&eacute;nit, ils se multiplient prodigieusement, et il ne laisse pas s&rsquo;amoindrir leur b&eacute;tail.
+</div><div class='passukEn'>He blesseth them also, so that they are multiplied greatly,
+And suffereth not their cattle to decrease.
+
+</div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּמְעֲט&#1445;וּ וַיָּשֹׁ&#1425;חוּ מֵעֹ&#1430;צֶר רָעָ&#1443;ה וְיָגֽוֹן:</span>
+</div><div class='passukFr'> [D&rsquo;autres, au contraire], sont d&eacute;cim&eacute;s, et fl&eacute;chissent sous l&rsquo;&eacute;treinte du malheur et du chagrin.
+</div><div class='passukEn'>Again, they are minished and dwindle away
+Through oppression of evil and sorrow.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וימעטו וישוחו.</b> והם מתחלה היו שוחין ומועטין מעוצר רעה ויגון : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וימעטו.</b> ר''ל וכן בהפוך כי בעונם ימעטו וישוחו עד לעפר מן הרעה אשר תהיה עצורה ועכובה אצלם ומן היגון אשר תהי' עליהם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>וישוחו.</b> ענין שפלות כפיפות כמו תחתיו שחחו עוזרי רהב (איוב ט) : <b>מעוצר.</b> ענין העכבה כמו נעצרה נא אותך (שופטים יג) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>וימעטו, </b> ולפעמים <b>ימעטו וישחו, </b> ע''י <b>עוצר רעה, </b> היינו שיכבשום ממשלה רעה, וימעטו ע''י שיהרוג הרבה מהם והנשארים ישחו מיגון, כי. (מ-מא) <b>שפך, </b> העוצר והמושל שכבשם שופך בוז על נדיבים, ויתעם להוליכם לגולה, כמו שהיה בעת כבש נבוכדנצר את ירושלים שאת כל נדיבי העם הגלה ויהרוג רבים מהם, ומדלת עם הארץ אשר אין להם כל מאומה השאיר לכורמים וליוגבים, ואז <b>וישגב אבין מעוני</b> והם <b>ישימו כצאן משפחות, </b> ויפרו וירבו בארץ כצאן הפרים ורבים מאד :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">שֹׁפֵ&#1443;ךְ בּ&#1453;וּז עַל-נְדִיבִ&#1425;ים וַ&#1437;יַּתְעֵ&#1431;ם בְּתֹ&#1443;הוּ לֹא-דָֽרֶךְ:</span>
+</div><div class='passukFr'> Il r&eacute;pand le m&eacute;pris sur les nobles, les &eacute;gare dans un chaos sans issue;
+</div><div class='passukEn'>He poureth contempt upon princes,
+And causeth them to wander in the waste, where there is no way.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>שופך.</b> פעמים יביא בזיון הרבה על נדיבים : <b>ויתעם.</b> עושה אותם תועים ללכת באורח תוהו לא בדרך ישר ר''ל שוגים בדעתם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>נדיבים.</b> ר''ל שרים בעלי מתן : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיְשַׂגֵּ&#1443;ב אֶבְי&#1443;וֹן מֵע&#1425;וֹנִי וַיָּ&#1445;שֶׂם כַּ&#1437;צֹּ&#1431;אן מִשְׁפָּחֽוֹת:</span>
+</div><div class='passukFr'> tandis qu&rsquo;il rel&egrave;ve le malheureux de sa mis&egrave;re et rend les familles nombreuses comme des troupeaux.
+</div><div class='passukEn'>Yet setteth He the needy on high from affliction,
+And maketh his families like a flock.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וישם כצאן משפחות.</b> וישם האביון משפחת זרעו כצאן רבים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וישגב.</b> ר''ל וכן בהפוך כי מחזק את האביון מן העוני שהיה בו ומוליד משפחות רבות כעדרי הצאן : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יִרְא&#1443;וּ יְשָׁרִ&#1443;ים וְיִשְׂמָ&#1425;חוּ וְכָל-עַ&#1437;וְלָ&#1431;ה קָ&#1443;פְצָה פִּֽיהָ:</span>
+</div><div class='passukFr'> Les justes le voient et se r&eacute;jouissent, et toute m&eacute;chancet&eacute; tient la bouche close.
+</div><div class='passukEn'>The upright see it, and are glad;
+And all iniquity stoppeth her mouth.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>קפצה.</b> סתמה כמו לא תקפוץ את ידך (דברים ט''ו) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יראו ישרים.</b> הטובה הבאה להאביון : <b>וישמחו.</b> בראותם מהשגחת המקום : <b>וכל עולה.</b> כל איש עולה יסגור פיו ויבוש מלדבר על כי יראה מפלאות ההשגחה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>קפצה.</b> סגרה כמו אם קפץ באף רחמיו (לעיל עז) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>יראו ישרים, </b> שהם ההולכים ישר בבינתם הם <b>ישמחו, </b> כי יכירו מכל זה השגחת ה', <b>וכל עולה קפצה פיה</b> כי יראו שיש גומל ומעניש :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִי-חָכָ&#1445;ם וְיִשְׁמָר-אֵ&#1425;לֶּה וְ&#1437;יִתְבּֽוֹנְנ&#1431;וּ חַֽסְדֵ&#1445;י יְהוָֽה:</span> <b>(פ)</b>
+</div><div class='passukFr'> Quiconque est sage doit observer ces faits et se p&eacute;n&eacute;trer des gr&acirc;ces de l&rsquo;&Eacute;ternel.
+</div><div class='passukEn'>Whoso is wise, let him observe these things,
+And let them consider the mercies of the Lord.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מי חכם.</b> מי אשר נשאו לבו בחכמה וישמור בלבו אלה הדברים יהיו מתבוננים אליו חסדי ה' ר''ל בשום אלה הדברים על הלב יהיו נגלים אליו חסדי ה' ויבן אותם : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>מי חכם</b> אשר קבל חקי החכמה, הוא <b>ישמר אלה, </b> כי מזה יביא מופת על השגחת ה', ועי''כ <b>יתבוננו חסדי ה'</b> שאין העולם הפקר, רק הכל בחסדי ה' ובהשגחתו : <small>(מלבי"ם באור הענין)</small></div></div>
+
+</div><div id='prakimFoot' class='prakim'><span class='perekTitle' id='perekTitle0'><a id='perekTitleFoot0' href='0.html'>לפני הקריאה</a></span><span class='perekTitle' id='perekTitleFoot1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitleFoot2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitleFoot3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitleFoot4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitleFoot5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitleFoot6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitleFoot7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitleFoot8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitleFoot9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitleFoot10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitleFoot11'><a href='11.html'>11</a></span><span class='perekTitle' id='perekTitleFoot12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitleFoot13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitleFoot14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitleFoot15'><a href='15.html'>15</a></span><span class='perekTitle' id='perekTitleFoot16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitleFoot17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitleFoot18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitleFoot19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitleFoot20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitleFoot21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitleFoot22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitleFoot23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitleFoot24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitleFoot25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitleFoot26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitleFoot27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitleFoot28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitleFoot29'><a href='29.html'>29</a></span><span class='perekTitle' id='perekTitleFoot30'><a href='30.html'>30</a></span><span class='perekTitle' id='perekTitleFoot31'><a href='31.html'>31</a></span><span class='perekTitle' id='perekTitleFoot32'><a href='32.html'>32</a></span><span class='perekTitle' id='perekTitleFoot33'><a href='33.html'>33</a></span><span class='perekTitle' id='perekTitleFoot34'><a href='34.html'>34</a></span><span class='perekTitle' id='perekTitleFoot35'><a href='35.html'>35</a></span><span class='perekTitle' id='perekTitleFoot36'><a href='36.html'>36</a></span><span class='perekTitle' id='perekTitleFoot37'><a href='37.html'>37</a></span><span class='perekTitle' id='perekTitleFoot38'><a href='38.html'>38</a></span><span class='perekTitle' id='perekTitleFoot39'><a href='39.html'>39</a></span><span class='perekTitle' id='perekTitleFoot40'><a href='40.html'>40</a></span><span class='perekTitle' id='perekTitleFoot41'><a href='41.html'>41</a></span><span class='perekTitle' id='perekTitleFoot42'><a href='42.html'>42</a></span><span class='perekTitle' id='perekTitleFoot43'><a href='43.html'>43</a></span><span class='perekTitle' id='perekTitleFoot44'><a href='44.html'>44</a></span><span class='perekTitle' id='perekTitleFoot45'><a href='45.html'>45</a></span><span class='perekTitle' id='perekTitleFoot46'><a href='46.html'>46</a></span><span class='perekTitle' id='perekTitleFoot47'><a href='47.html'>47</a></span><span class='perekTitle' id='perekTitleFoot48'><a href='48.html'>48</a></span><span class='perekTitle' id='perekTitleFoot49'><a href='49.html'>49</a></span><span class='perekTitle' id='perekTitleFoot50'><a href='50.html'>50</a></span><span class='perekTitle' id='perekTitleFoot51'><a href='51.html'>51</a></span><span class='perekTitle' id='perekTitleFoot52'><a href='52.html'>52</a></span><span class='perekTitle' id='perekTitleFoot53'><a href='53.html'>53</a></span><span class='perekTitle' id='perekTitleFoot54'><a href='54.html'>54</a></span><span class='perekTitle' id='perekTitleFoot55'><a href='55.html'>55</a></span><span class='perekTitle' id='perekTitleFoot56'><a href='56.html'>56</a></span><span class='perekTitle' id='perekTitleFoot57'><a href='57.html'>57</a></span><span class='perekTitle' id='perekTitleFoot58'><a href='58.html'>58</a></span><span class='perekTitle' id='perekTitleFoot59'><a href='59.html'>59</a></span><span class='perekTitle' id='perekTitleFoot60'><a href='60.html'>60</a></span><span class='perekTitle' id='perekTitleFoot61'><a href='61.html'>61</a></span><span class='perekTitle' id='perekTitleFoot62'><a href='62.html'>62</a></span><span class='perekTitle' id='perekTitleFoot63'><a href='63.html'>63</a></span><span class='perekTitle' id='perekTitleFoot64'><a href='64.html'>64</a></span><span class='perekTitle' id='perekTitleFoot65'><a href='65.html'>65</a></span><span class='perekTitle' id='perekTitleFoot66'><a href='66.html'>66</a></span><span class='perekTitle' id='perekTitleFoot67'><a href='67.html'>67</a></span><span class='perekTitle' id='perekTitleFoot68'><a href='68.html'>68</a></span><span class='perekTitle' id='perekTitleFoot69'><a href='69.html'>69</a></span><span class='perekTitle' id='perekTitleFoot70'><a href='70.html'>70</a></span><span class='perekTitle' id='perekTitleFoot71'><a href='71.html'>71</a></span><span class='perekTitle' id='perekTitleFoot72'><a href='72.html'>72</a></span><span class='perekTitle' id='perekTitleFoot73'><a href='73.html'>73</a></span><span class='perekTitle' id='perekTitleFoot74'><a href='74.html'>74</a></span><span class='perekTitle' id='perekTitleFoot75'><a href='75.html'>75</a></span><span class='perekTitle' id='perekTitleFoot76'><a href='76.html'>76</a></span><span class='perekTitle' id='perekTitleFoot77'><a href='77.html'>77</a></span><span class='perekTitle' id='perekTitleFoot78'><a href='78.html'>78</a></span><span class='perekTitle' id='perekTitleFoot79'><a href='79.html'>79</a></span><span class='perekTitle' id='perekTitleFoot80'><a href='80.html'>80</a></span><span class='perekTitle' id='perekTitleFoot81'><a href='81.html'>81</a></span><span class='perekTitle' id='perekTitleFoot82'><a href='82.html'>82</a></span><span class='perekTitle' id='perekTitleFoot83'><a href='83.html'>83</a></span><span class='perekTitle' id='perekTitleFoot84'><a href='84.html'>84</a></span><span class='perekTitle' id='perekTitleFoot85'><a href='85.html'>85</a></span><span class='perekTitle' id='perekTitleFoot86'><a href='86.html'>86</a></span><span class='perekTitle' id='perekTitleFoot87'><a href='87.html'>87</a></span><span class='perekTitle' id='perekTitleFoot88'><a href='88.html'>88</a></span><span class='perekTitle' id='perekTitleFoot89'><a href='89.html'>89</a></span><span class='perekTitle' id='perekTitleFoot90'><a href='90.html'>90</a></span><span class='perekTitle' id='perekTitleFoot91'><a href='91.html'>91</a></span><span class='perekTitle' id='perekTitleFoot92'><a href='92.html'>92</a></span><span class='perekTitle' id='perekTitleFoot93'><a href='93.html'>93</a></span><span class='perekTitle' id='perekTitleFoot94'><a href='94.html'>94</a></span><span class='perekTitle' id='perekTitleFoot95'><a href='95.html'>95</a></span><span class='perekTitle' id='perekTitleFoot96'><a href='96.html'>96</a></span><span class='perekTitle' id='perekTitleFoot97'><a href='97.html'>97</a></span><span class='perekTitle' id='perekTitleFoot98'><a href='98.html'>98</a></span><span class='perekTitle' id='perekTitleFoot99'><a href='99.html'>99</a></span><span class='perekTitle' id='perekTitleFoot100'><a href='100.html'>100</a></span><span class='perekTitle' id='perekTitleFoot101'><a href='101.html'>101</a></span><span class='perekTitle' id='perekTitleFoot102'><a href='102.html'>102</a></span><span class='perekTitle' id='perekTitleFoot103'><a href='103.html'>103</a></span><span class='perekTitle' id='perekTitleFoot104'><a href='104.html'>104</a></span><span class='perekTitle' id='perekTitleFoot105'><a href='105.html'>105</a></span><span class='perekTitle' id='perekTitleFoot106'><a href='106.html'>106</a></span><span class='perekTitle' id='perekTitleFoot107'><a id='linkSelectedHead' class='linkSelected' href='107.html'>107</a></span><span class='perekTitle' id='perekTitleFoot108'><a href='108.html'>108</a></span><span class='perekTitle' id='perekTitleFoot109'><a href='109.html'>109</a></span><span class='perekTitle' id='perekTitleFoot110'><a href='110.html'>110</a></span><span class='perekTitle' id='perekTitleFoot111'><a href='111.html'>111</a></span><span class='perekTitle' id='perekTitleFoot112'><a href='112.html'>112</a></span><span class='perekTitle' id='perekTitleFoot113'><a href='113.html'>113</a></span><span class='perekTitle' id='perekTitleFoot114'><a href='114.html'>114</a></span><span class='perekTitle' id='perekTitleFoot115'><a href='115.html'>115</a></span><span class='perekTitle' id='perekTitleFoot116'><a href='116.html'>116</a></span><span class='perekTitle' id='perekTitleFoot117'><a href='117.html'>117</a></span><span class='perekTitle' id='perekTitleFoot118'><a href='118.html'>118</a></span><span class='perekTitle' id='perekTitleFoot119'><a href='119.html'>119</a></span><span class='perekTitle' id='perekTitleFoot120'><a href='120.html'>120</a></span><span class='perekTitle' id='perekTitleFoot121'><a href='121.html'>121</a></span><span class='perekTitle' id='perekTitleFoot122'><a href='122.html'>122</a></span><span class='perekTitle' id='perekTitleFoot123'><a href='123.html'>123</a></span><span class='perekTitle' id='perekTitleFoot124'><a href='124.html'>124</a></span><span class='perekTitle' id='perekTitleFoot125'><a href='125.html'>125</a></span><span class='perekTitle' id='perekTitleFoot126'><a href='126.html'>126</a></span><span class='perekTitle' id='perekTitleFoot127'><a href='127.html'>127</a></span><span class='perekTitle' id='perekTitleFoot128'><a href='128.html'>128</a></span><span class='perekTitle' id='perekTitleFoot129'><a href='129.html'>129</a></span><span class='perekTitle' id='perekTitleFoot130'><a href='130.html'>130</a></span><span class='perekTitle' id='perekTitleFoot131'><a href='131.html'>131</a></span><span class='perekTitle' id='perekTitleFoot132'><a href='132.html'>132</a></span><span class='perekTitle' id='perekTitleFoot133'><a href='133.html'>133</a></span><span class='perekTitle' id='perekTitleFoot134'><a href='134.html'>134</a></span><span class='perekTitle' id='perekTitleFoot135'><a href='135.html'>135</a></span><span class='perekTitle' id='perekTitleFoot136'><a href='136.html'>136</a></span><span class='perekTitle' id='perekTitleFoot137'><a href='137.html'>137</a></span><span class='perekTitle' id='perekTitleFoot138'><a href='138.html'>138</a></span><span class='perekTitle' id='perekTitleFoot139'><a href='139.html'>139</a></span><span class='perekTitle' id='perekTitleFoot140'><a href='140.html'>140</a></span><span class='perekTitle' id='perekTitleFoot141'><a href='141.html'>141</a></span><span class='perekTitle' id='perekTitleFoot142'><a href='142.html'>142</a></span><span class='perekTitle' id='perekTitleFoot143'><a href='143.html'>143</a></span><span class='perekTitle' id='perekTitleFoot144'><a href='144.html'>144</a></span><span class='perekTitle' id='perekTitleFoot145'><a href='145.html'>145</a></span><span class='perekTitle' id='perekTitleFoot146'><a href='146.html'>146</a></span><span class='perekTitle' id='perekTitleFoot147'><a href='147.html'>147</a></span><span class='perekTitle' id='perekTitleFoot148'><a href='148.html'>148</a></span><span class='perekTitle' id='perekTitleFoot149'><a href='149.html'>149</a></span><span class='perekTitle' id='perekTitleFoot150'><a href='150.html'>150</a></span> <span class='perekTitle' id='perekTitleFoot151'><a  href='151.html'>אחרי הקריאה</a></span></span></div></div></div></body></html>

@@ -1,0 +1,7 @@
+<ion-list  class="selectFavorites" >
+    <ion-item *ngFor="let day of counter(150),let dayNum=index" >
+        <ion-label>{{dayNum+1}}</ion-label>
+        <ion-checkbox (click)="addRemoveToFavorites(dayNum+1)" [checked]="isNumInFavorites(dayNum+1)"></ion-checkbox>
+      </ion-item>
+   
+</ion-list>

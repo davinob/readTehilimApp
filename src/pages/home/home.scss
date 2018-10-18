@@ -1,3 +1,51 @@
 page-home {
 
+
+    .buttonInAccordion {
+        background-color: #5475aa;
+        color: #f9ffff;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        font-weight: bold;
+        transition: 0.4s;
+        margin-bottom:15px;
+    }
+
+    .divItem
+    {
+        color: #5475aa;
+        background-color: #f9ffff;
+        border: none;
+        outline: none;
+        font-size: 25px;
+        font-weight: bold;
+        transition: 0.4s;
+        width:100%;
+        text-align: center;
+        align-content: center;
+        margin-bottom:25px;
+    }
+
+    .dateTitle
+    {
+        color: #1c4179;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 15px;
+        text-align: center;
+        width: 100%;
+        margin-bottom:20px;
+        
+    }
+    
+    .content
+    {
+        font-size:30px;
+    }
+
+
 }

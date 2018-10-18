@@ -1,0 +1,262 @@
+<html><head>
+				<link rel='stylesheet' type='text/css' href='../css/stylesTorah.css'>
+			<script src='../js/myScript.js'></script>				
+			
+				</head>
+							<body class='theBody' onload='initClassesBasedOnCookies()'>
+						<div id='mySidenav' class='sidenav'>
+ 
+ 					<span class='trads'>
+					<span type='button' id='passukEn'  onClick="hideShow('passukEn',this)" class='button'>EN</span>
+					<span type='button' id='passukFr'  onClick="hideShow('passukFr',this)" class='button'>FR</span>					
+					</span>
+					<span class='pirushim'>
+					<span type='button' id='rashi' onClick="hideShow('rashi',this)" class='button'>רש"י</span><span type='button' id='mezudatDavid' onClick="hideShow('mezudatDavid',this)" class='button'>מצודת דוד</span><span type='button' id='mezudatZion' onClick="hideShow('mezudatZion',this)" class='button'>מצודת ציון</span><span type='button' id='malbim' onClick="hideShow('malbim',this)" class='button'>מלבי"ם</span></span>
+  
+					</div>
+					<span id='buttonNav' style='font-size:35px;cursor:pointer; position:fixed' onclick='openNav()'>&#9776;</span>
+		
+						<div class='theContent'  style="display:none"  onclick='closeNav()'><div class='newSefer'><div id='prakimHead' class='prakim'><span class='perekTitle' id='perekTitle0'><a  href='0.html'>לפני הקריאה</a></span><span class='perekTitle' id='perekTitle1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitle2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitle3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitle4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitle5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitle6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitle7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitle8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitle9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitle10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitle11'><a href='11.html'>11</a></span><span class='perekTitle' id='perekTitle12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitle13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitle14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitle15'><a href='15.html'>15</a></span><span class='perekTitle' id='perekTitle16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitle17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitle18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitle19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitle20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitle21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitle22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitle23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitle24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitle25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitle26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitle27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitle28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitle29'><a href='29.html'>29</a></span><span class='perekTitle' id='perekTitle30'><a href='30.html'>30</a></span><span class='perekTitle' id='perekTitle31'><a href='31.html'>31</a></span><span class='perekTitle' id='perekTitle32'><a href='32.html'>32</a></span><span class='perekTitle' id='perekTitle33'><a href='33.html'>33</a></span><span class='perekTitle' id='perekTitle34'><a href='34.html'>34</a></span><span class='perekTitle' id='perekTitle35'><a href='35.html'>35</a></span><span class='perekTitle' id='perekTitle36'><a href='36.html'>36</a></span><span class='perekTitle' id='perekTitle37'><a href='37.html'>37</a></span><span class='perekTitle' id='perekTitle38'><a href='38.html'>38</a></span><span class='perekTitle' id='perekTitle39'><a href='39.html'>39</a></span><span class='perekTitle' id='perekTitle40'><a href='40.html'>40</a></span><span class='perekTitle' id='perekTitle41'><a href='41.html'>41</a></span><span class='perekTitle' id='perekTitle42'><a href='42.html'>42</a></span><span class='perekTitle' id='perekTitle43'><a href='43.html'>43</a></span><span class='perekTitle' id='perekTitle44'><a href='44.html'>44</a></span><span class='perekTitle' id='perekTitle45'><a href='45.html'>45</a></span><span class='perekTitle' id='perekTitle46'><a href='46.html'>46</a></span><span class='perekTitle' id='perekTitle47'><a href='47.html'>47</a></span><span class='perekTitle' id='perekTitle48'><a href='48.html'>48</a></span><span class='perekTitle' id='perekTitle49'><a href='49.html'>49</a></span><span class='perekTitle' id='perekTitle50'><a href='50.html'>50</a></span><span class='perekTitle' id='perekTitle51'><a href='51.html'>51</a></span><span class='perekTitle' id='perekTitle52'><a href='52.html'>52</a></span><span class='perekTitle' id='perekTitle53'><a href='53.html'>53</a></span><span class='perekTitle' id='perekTitle54'><a href='54.html'>54</a></span><span class='perekTitle' id='perekTitle55'><a href='55.html'>55</a></span><span class='perekTitle' id='perekTitle56'><a href='56.html'>56</a></span><span class='perekTitle' id='perekTitle57'><a href='57.html'>57</a></span><span class='perekTitle' id='perekTitle58'><a href='58.html'>58</a></span><span class='perekTitle' id='perekTitle59'><a href='59.html'>59</a></span><span class='perekTitle' id='perekTitle60'><a href='60.html'>60</a></span><span class='perekTitle' id='perekTitle61'><a href='61.html'>61</a></span><span class='perekTitle' id='perekTitle62'><a href='62.html'>62</a></span><span class='perekTitle' id='perekTitle63'><a href='63.html'>63</a></span><span class='perekTitle' id='perekTitle64'><a href='64.html'>64</a></span><span class='perekTitle' id='perekTitle65'><a href='65.html'>65</a></span><span class='perekTitle' id='perekTitle66'><a href='66.html'>66</a></span><span class='perekTitle' id='perekTitle67'><a href='67.html'>67</a></span><span class='perekTitle' id='perekTitle68'><a href='68.html'>68</a></span><span class='perekTitle' id='perekTitle69'><a href='69.html'>69</a></span><span class='perekTitle' id='perekTitle70'><a href='70.html'>70</a></span><span class='perekTitle' id='perekTitle71'><a href='71.html'>71</a></span><span class='perekTitle' id='perekTitle72'><a href='72.html'>72</a></span><span class='perekTitle' id='perekTitle73'><a href='73.html'>73</a></span><span class='perekTitle' id='perekTitle74'><a href='74.html'>74</a></span><span class='perekTitle' id='perekTitle75'><a href='75.html'>75</a></span><span class='perekTitle' id='perekTitle76'><a href='76.html'>76</a></span><span class='perekTitle' id='perekTitle77'><a href='77.html'>77</a></span><span class='perekTitle' id='perekTitle78'><a href='78.html'>78</a></span><span class='perekTitle' id='perekTitle79'><a href='79.html'>79</a></span><span class='perekTitle' id='perekTitle80'><a href='80.html'>80</a></span><span class='perekTitle' id='perekTitle81'><a href='81.html'>81</a></span><span class='perekTitle' id='perekTitle82'><a href='82.html'>82</a></span><span class='perekTitle' id='perekTitle83'><a href='83.html'>83</a></span><span class='perekTitle' id='perekTitle84'><a href='84.html'>84</a></span><span class='perekTitle' id='perekTitle85'><a href='85.html'>85</a></span><span class='perekTitle' id='perekTitle86'><a href='86.html'>86</a></span><span class='perekTitle' id='perekTitle87'><a href='87.html'>87</a></span><span class='perekTitle' id='perekTitle88'><a href='88.html'>88</a></span><span class='perekTitle' id='perekTitle89'><a href='89.html'>89</a></span><span class='perekTitle' id='perekTitle90'><a href='90.html'>90</a></span><span class='perekTitle' id='perekTitle91'><a href='91.html'>91</a></span><span class='perekTitle' id='perekTitle92'><a href='92.html'>92</a></span><span class='perekTitle' id='perekTitle93'><a href='93.html'>93</a></span><span class='perekTitle' id='perekTitle94'><a href='94.html'>94</a></span><span class='perekTitle' id='perekTitle95'><a href='95.html'>95</a></span><span class='perekTitle' id='perekTitle96'><a href='96.html'>96</a></span><span class='perekTitle' id='perekTitle97'><a href='97.html'>97</a></span><span class='perekTitle' id='perekTitle98'><a href='98.html'>98</a></span><span class='perekTitle' id='perekTitle99'><a href='99.html'>99</a></span><span class='perekTitle' id='perekTitle100'><a href='100.html'>100</a></span><span class='perekTitle' id='perekTitle101'><a href='101.html'>101</a></span><span class='perekTitle' id='perekTitle102'><a href='102.html'>102</a></span><span class='perekTitle' id='perekTitle103'><a href='103.html'>103</a></span><span class='perekTitle' id='perekTitle104'><a href='104.html'>104</a></span><span class='perekTitle' id='perekTitle105'><a href='105.html'>105</a></span><span class='perekTitle' id='perekTitle106'><a href='106.html'>106</a></span><span class='perekTitle' id='perekTitle107'><a href='107.html'>107</a></span><span class='perekTitle' id='perekTitle108'><a href='108.html'>108</a></span><span class='perekTitle' id='perekTitle109'><a href='109.html'>109</a></span><span class='perekTitle' id='perekTitle110'><a href='110.html'>110</a></span><span class='perekTitle' id='perekTitle111'><a href='111.html'>111</a></span><span class='perekTitle' id='perekTitle112'><a href='112.html'>112</a></span><span class='perekTitle' id='perekTitle113'><a href='113.html'>113</a></span><span class='perekTitle' id='perekTitle114'><a href='114.html'>114</a></span><span class='perekTitle' id='perekTitle115'><a href='115.html'>115</a></span><span class='perekTitle' id='perekTitle116'><a href='116.html'>116</a></span><span class='perekTitle' id='perekTitle117'><a href='117.html'>117</a></span><span class='perekTitle' id='perekTitle118'><a href='118.html'>118</a></span><span class='perekTitle' id='perekTitle119'><a href='119.html'>119</a></span><span class='perekTitle' id='perekTitle120'><a href='120.html'>120</a></span><span class='perekTitle' id='perekTitle121'><a href='121.html'>121</a></span><span class='perekTitle' id='perekTitle122'><a href='122.html'>122</a></span><span class='perekTitle' id='perekTitle123'><a href='123.html'>123</a></span><span class='perekTitle' id='perekTitle124'><a href='124.html'>124</a></span><span class='perekTitle' id='perekTitle125'><a href='125.html'>125</a></span><span class='perekTitle' id='perekTitle126'><a href='126.html'>126</a></span><span class='perekTitle' id='perekTitle127'><a href='127.html'>127</a></span><span class='perekTitle' id='perekTitle128'><a href='128.html'>128</a></span><span class='perekTitle' id='perekTitle129'><a href='129.html'>129</a></span><span class='perekTitle' id='perekTitle130'><a href='130.html'>130</a></span><span class='perekTitle' id='perekTitle131'><a href='131.html'>131</a></span><span class='perekTitle' id='perekTitle132'><a href='132.html'>132</a></span><span class='perekTitle' id='perekTitle133'><a href='133.html'>133</a></span><span class='perekTitle' id='perekTitle134'><a href='134.html'>134</a></span><span class='perekTitle' id='perekTitle135'><a href='135.html'>135</a></span><span class='perekTitle' id='perekTitle136'><a id='linkSelectedHead' class='linkSelected' href='136.html'>136</a></span><span class='perekTitle' id='perekTitle137'><a href='137.html'>137</a></span><span class='perekTitle' id='perekTitle138'><a href='138.html'>138</a></span><span class='perekTitle' id='perekTitle139'><a href='139.html'>139</a></span><span class='perekTitle' id='perekTitle140'><a href='140.html'>140</a></span><span class='perekTitle' id='perekTitle141'><a href='141.html'>141</a></span><span class='perekTitle' id='perekTitle142'><a href='142.html'>142</a></span><span class='perekTitle' id='perekTitle143'><a href='143.html'>143</a></span><span class='perekTitle' id='perekTitle144'><a href='144.html'>144</a></span><span class='perekTitle' id='perekTitle145'><a href='145.html'>145</a></span><span class='perekTitle' id='perekTitle146'><a href='146.html'>146</a></span><span class='perekTitle' id='perekTitle147'><a href='147.html'>147</a></span><span class='perekTitle' id='perekTitle148'><a href='148.html'>148</a></span><span class='perekTitle' id='perekTitle149'><a href='149.html'>149</a></span><span class='perekTitle' id='perekTitle150'><a href='150.html'>150</a></span> <span class='perekTitle' id='perekTitle151'><a  href='151.html'>אחרי הקריאה</a></span></div></div><div class='seferContent'>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{א}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הוֹד&#1443;וּ לַיהוָ&#1443;ה כִּי-ט&#1425;וֹב כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> Rendez hommage au Seigneur, car il est bon, car sa gr&acirc;ce est &eacute;ternelle.
+</div><div class='passukEn'> O give thanks unto the Lord, for He is good,
+For His mercy endureth for ever.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי לעולם חסדו.</b> כי חסד ה' הוא דבר המתקיים לעולם ולא כן חסדו של ב''ו : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>הודו</b> אחר שצוה על ההילול והברכה צוה על ההודאה להודות על הטובות שקבלו מנו שזה מצד טובו וחסדיו, וחסדים אלה הם לעולם, בין בעת שינהיג את העולם עפ''י הנהגת הטבע, בין כשמנהיג עפ''י הנהגת הנפלאות, שהם שני ההנהגות שציין במ''ש ה' שמך לעולם ה' זכרך לדור ודור, והנה על ההנהגה עפ''י הטבע, אמר (ב-ג) <b>הודו לאלהי האלהים, לאדוני האדונים, </b> כי ההנהגה הטבעיית ציינו האומות הקדמונים שהם על ידי אלהים ואדונים, שהם הכוכבים והמזלות שהם היו לדעתם אדוני הארץ והמושלים, והמלאכים המנהיגים את המערכת שהם היו לדעתם אלהים לאדונים האלה, ומשפיעים עליהם כח ועצמה, על פי זה אמר שה' הוא הנותן כח אל המלאכים, והנהגה ואדנות אל האדונים, והכל ע''פ כחו והנהגתו :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">ה&#1453;וֹדוּ לֵֽאלֹהֵ&#1443;י הָאֱלֹהִ&#1425;ים כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> Rendez hommage au Dieu des dieux, car sa gr&acirc;ce est &eacute;ternelle.
+</div><div class='passukEn'>O give thanks unto the God of gods,
+For His mercy endureth for ever.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>האלהים.</b> הם מלאכי מעלה : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">ה&#1453;וֹדוּ לַאֲדֹנֵ&#1443;י הָאֲדֹנִ&#1425;ים כִּ&#1430;י לְעֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> Rendez hommage au Ma&icirc;tre des ma&icirc;tres, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>O give thanks unto the Lord of lords,
+For His mercy endureth for ever.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>האדונים.</b> הם צבא השמים וכסיליהם שהם אדונים למשול בארץ וה' הוא אדון אליהם ולכל אשר יחפוץ יטם : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְעֹ&#1432;שֵׂ&#1444;ה נִפְלָא&#1443;וֹת גְּדֹל&#1443;וֹת לְבַדּ&#1425;וֹ כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui accomplit, lui seul, de grandes merveilles, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him who alone doeth great wonders,
+For His mercy endureth for ever.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>לעשה נפלאות גדולות לבדו.</b> בראשונה לא נברא מלאך כשעשאן לנפלאות הללו השמים והארץ השמש והירח : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לעושה.</b> מוסב על מלת הודו לומר הודו לעושה נפלאות גדולות וכן כולם : <b>לבדו.</b> ואינו צריך לעזר מלאכי מעלה : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>לעשה, </b> ונגד ההנהגה הפלאיית שזה אין נעשה כלל ע''י מלאך או גלגל, רק מה' לבדו אמר שהנפלאות גדולות עושה לבדו, שלא באמצעות האלהים והאדונים, כי אז משדד את כוחם ויפליא פלאות בכחו הגדול :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְעֹשֵׂ&#1443;ה הַ&#1453;שָּׁמַיִם בִּתְבוּנָ&#1425;ה כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui fit les cieux avec sagesse, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him that by understanding made the heavens,
+For His mercy endureth for ever.
+</div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(ה-ו) <b>לעשה, </b> חוזר אל הנהגת הטבע, את <b>השמים עשה בתבונה, </b> וכבר בארנו זה בפי' משלי שבכ''מ ייחס החכמה אל בריאת הארץ, והתבונה אל מלאכת השמים, כי החכמה תבחין בין טוב לרע, והתבונה תבחין בין אמת ושקר, והשמים הם קיימים באיש, ואין שם מציאות טוב ורע, לא כן בארץ, רוקע הארץ על המים, כי ראשית הויית הארץ היתה מכוסה בתהומות, ואמר בזה בהוה לעושה, לרוקע, כי הוא מחדש בכל יום מעשה בראשית, וקיום הבריאה היא בריאה מתמדת, ובארץ יש אפשרות תמיד שתחזור אל התהו ובהו כבתחלה, כי תחלת בריאתה היה שתהיה מכוסה במים וכן צריך להודות חסדו על מה שהוא. (ז-ט) <b>עשה אורים גדולים, </b> וגם בזה רבו חסדיו, שהשמש תאיר ביום והירח בלילה, וכמ''ש למעלה סימן ק''ד שזה ג''כ מפלאי ההשגחה שבזה בלילה תרמוש כל חיתו יער והאדם ינוח מעבודתו, ובזרוח השמש יאספון עיי''ש :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְרֹקַ&#1443;ע הָ&#1453;אָרֶץ עַל-הַמָּ&#1425;יִם כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui &eacute;tendit la terre par-dessus les eaux, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him that spread forth the earth above the waters,
+For His mercy endureth for ever.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>על המים.</b> והוא נגד הטבע כי טבע המים לעלות ממעל לארץ : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>לרוקע.</b> ענין שטיחה ופרישה כמו וצורף בזהב ירקענו (ישעיה מ) : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְ&#1453;עֹשֵׂה אוֹרִ&#1443;ים גְּדֹלִ&#1425;ים כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</span>
+</div><div class='passukFr'> &agrave; Celui qui cr&eacute;a les grands luminaires, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him that made great lights,
+For His mercy endureth for ever;
+</div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֶת-הַ&#1453;שֶּׁמֶשׁ לְמֶמְשֶׁ&#1443;לֶת בַּיּ&#1425;וֹם כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> le soleil pour r&eacute;gner le jour, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>The sun to rule by day,
+For His mercy endureth for ever;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>את השמש.</b> ר''ל הודו לעושה את השמש למשול ביום וקבע לו תחומו ולא יעבור : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֶת-הַיָּרֵ&#1443;חַ וְ&#1453;כוֹכָבִים לְמֶמְשְׁל&#1443;וֹת בַּלָּ&#1425;יְלָה כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</span>
+</div><div class='passukFr'> la lune et les &eacute;toiles pour r&eacute;gner la nuit, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>The moon and stars to rule by night,
+For His mercy endureth for ever.
+
+</div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{י}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְמַכֵּ&#1443;ה מִ&#1453;צְרַיִם בִּבְכוֹרֵיהֶ&#1425;ם כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui frappa les &Eacute;gyptiens dans leurs premiers-n&eacute;s, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him that smote Egypt in their first-born,
+For His mercy endureth for ever;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>למכה מצרים בבכוריהם.</b> בכוריהם לא נאמר אלא בבכוריהם עמדו בכורים וקפחו שוקן של אביהם המעכבי' בישראל כששמעו נגע עשירי מפי משה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בבכוריהם.</b> ביד בכוריהם כי כאשר שמעו הבכורים ממכת בכורות עמדו על אבותיהם למהר לשלח את ישראל : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;(י-יא) <b>למכה, </b> עתה מפרש הנפלאות, שע''י מכת בכורות הוציא ישראל מתוכם ביד חזקה, והיו הפלאות האלה בשביל גאולת ישראל, ובמכת בכורות היה הרעה שהגיעה למצרים לתכלית טובת ישראל, להוציאם משם, ואח''כ, (יג-טו) <b>במה שגזר ים סוף לגזרים, והעביר ישראל בתוכו, </b> היה עקר הנס לרעת המצריים לכלותם, כי היה יכול להציל את ישראל אז באופן אחר, וגם שה' הקשה את לבו לרדוף אחר ישראל, וכ''ז היה כדי להטביע את המצרים בים, כמ''ש כי בדבר אשר זדו עליהם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיּוֹצֵ&#1443;א יִ&#1453;שְׂרָאֵל מִתּוֹכָ&#1425;ם כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> et fit sortir Isra&euml;l du milieu d&rsquo;eux, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>And brought out Israel from among them,
+For His mercy endureth for ever;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויוצא.</b> ר''ל הודו לאשר הוציא את ישראל מתוך מצרים : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">בְּיָ&#1443;ד חֲ&#1453;זָקָה וּבִזְר&#1443;וֹעַ נְטוּיָ&#1425;ה כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> avec une main puissante et un bras &eacute;tendu, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>With a strong hand, and with an outstretched arm,
+For His mercy endureth for ever.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ביד.</b> ר''ל הודו לאשר הוציא ביד חזקה ובזרוע נטויה והמשילו לגבור הנוטה בידו מול האויב בהלחמו עמו ואמר הודו לו על שהוציאם ביד רמה ולא כעבדים הבורחים : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְגֹזֵ&#1443;ר יַם-ס&#1453;וּף לִגְזָרִ&#1425;ים כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui fendit en deux la mer des Joncs, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him who divided the Red Sea in sunder,
+For His mercy endureth for ever;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>לגזרים.</b> י''ב קרעים לי''ב שבטים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לגזרים.</b> לקרעים הרבה לכל שבט שביל לעצמו : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>לגוזר.</b> ענין כריתה וחתוך כמו וזרו את הילד (מ''א ג') : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהֶעֱבִ&#1443;יר יִשְׂרָאֵ&#1443;ל בְּתוֹכ&#1425;וֹ כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> la fit traverser &agrave; Isra&euml;l, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>And made Israel to pass through the midst of it,
+For His mercy endureth for ever;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>והעביר.</b> הודו לאשר העביר את ישראל בתוך הים : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְנִ&#1432;עֵ&#1444;ר פַּרְעֹ&#1443;ה וְחֵיל&#1443;וֹ בְיַם-ס&#1425;וּף כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> et pr&eacute;cipita Pharaon et son arm&eacute;e dans ses flots, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>But overthrew Pharaoh and his host in the Red Sea,
+For His mercy endureth for ever.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ונער.</b> הודו לאשר נער וטרד בתנועה חזקה את פרעה וגו' : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ונער.</b> ענין תנועה חזקה כמו חצני נערתי (נחמיה ה) : <b>וחילו.</b> מל' חיל וצבא : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְמוֹלִ&#1443;יךְ עַ&#1453;מּוֹ בַּמִּדְבָּ&#1425;ר כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui dirigea son peuple dans le d&eacute;sert, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him that led His people through the wilderness,
+For His mercy endureth for ever.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>למוליך.</b> ר''ל היה מוליכם בדרך הישר ע''י עמוד הענן : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>למוליך, </b> וגם זה היה מחסדי ה' שעי''כ למדו לדעת דרכי ה' ותורתו, ולהשליך מלבבם ציורים הרעים שנחלו מן המצריים, כמ''ש באה''ש דרוש ב' וכבר התבאר במדרש, שע''י שהוליכם במדבר ונצטערו נתוסף להם ארץ סיחון ועוג, וז''ש שעי''כ למכה מלכים גדולים, ונתן ארצם נחלה, עד שגם הטלטול במדבר שהיה ממדת הדין הקשה, היה מצד חסדיו ורחמיו :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְ&#1453;מַכֵּה מְלָכִ&#1443;ים גְּדֹלִ&#1425;ים כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui qui vainquit de grands rois, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>To Him that smote great kings;
+For His mercy endureth for ever;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>מלכים גדולים.</b> כאן רמז ל''א מלכים והשוה להם פרעה וחילו ומכת מצרים למלכים אדירים קשים מהם שקול סיחון כנגד כלם כל אחד לעצמו וכן פירש למעלה לסיחון מלך האמרי ולעוג מלך הבשן ולכל ממלכות כנען, כן באגדה : <small>(רש"י)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַ&#1453;ֽיַּהֲרֹג מְלָכִ&#1443;ים אַדִּירִ&#1425;ים כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> et fit p&eacute;rir de puissants souverains, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>And slew mighty kings,
+For His mercy endureth for ever.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויהרוג.</b> הודו לאשר הרג מלכים אדירים של כנען והם המלכים הגדולים שזכר וכפל הדבר במ''ש : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְ&#1453;סִיחוֹן מֶ&#1443;לֶךְ הָאֱמֹרִ&#1425;י כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> Sihon, roi des Amorr&eacute;ens, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>Sihon king of the Amorites,
+For His mercy endureth for ever;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לסיחון.</b> הודו לאשר הרג לסיחון וגו' ובעבור חזקו פרטו לעצמו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּ&#1453;לְעוֹג מֶ&#1443;לֶךְ הַבָּשָׁ&#1425;ן כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> et Og, roi du Basan, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>And Og king of Bashan,
+For His mercy endureth for ever;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ולעוג.</b> הודו לאשר הרג גם לעוג וגו' ובעבור חזקו פרט גם אותו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְנָתַ&#1443;ן אַרְצָ&#1443;ם לְנַחֲלָ&#1425;ה כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> pour donner leur pays en h&eacute;ritage, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>And gave their land for a heritage,
+For His mercy endureth for ever;
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ונתן.</b> הודו לאשר גם נתן ארצם לנחלה עם כי לא שאלו רק לעבור בגבולו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">נַ&#1453;חֲלָה לְיִשְׂרָאֵ&#1443;ל עַבְדּ&#1425;וֹ כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> en h&eacute;ritage &agrave; Isra&euml;l, son serviteur, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>Even a heritage unto Israel His servant,
+For His mercy endureth for ever.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>נחלה.</b> הודו לאשר נתנם נחלה לכל ישראל עבדו כי לקיים שבועתו להאבות היה די אם היה נתנם להצדיקים שבדור : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">שֶׁ&#1453;בְּשִׁפְלֵנוּ זָ&#1443;כַר לָ&#1425;נוּ כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> &agrave; Celui, qui, dans notre abaissement, se souvint de nous, car sa gr&acirc;ce est &eacute;ternelle;
+</div><div class='passukEn'>Who remembered us in our low estate,
+For His mercy endureth for ever;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>שבשפלנו זכר לנו.</b> במצרי' זכר לנו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>שבשפלנו.</b> הודו לאשר זכר אותנו בעוד היינו בתכלית השפלות במצרים נבזים ומלוכלכים בעבודת פרך : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>שבשפלנו זכר לנו, </b> וכל הנסים שהרבה לנו בעבר הוא התחלה אל העתיד, שבכל עת שפלנו יזכר לנו הנסים הקדמונים, ויפרקנו מצרינו, כי כל אשר יעשה האלהים הוא יהיה לעולם, וא''כ הנסים והגאולה הקודמת שמורים לע''ל :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּפְרְקֵ&#1445;נוּ מִצָּרֵ&#1425;ינוּ כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> et nous d&eacute;livra de nos adversaires, car sa gr&acirc;ce est &eacute;ternelle.
+</div><div class='passukEn'>And hath delivered us from our adversaries,
+For His mercy endureth for ever.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ויפרקנו.</b> מתוכם והפליא לנו כל זה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויפרקנו.</b> הודו לאשר פרק והושיע לנו מצרינו : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ויפרקנו.</b> הוא תרגום של ישועה וכן פורק אין מידם (איכה ה) : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">נֹתֵ&#1443;ן לֶ&#1453;חֶם לְכָל-בָּשָׂ&#1425;ר כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span>
+</div><div class='passukFr'> Il donne du pain &agrave; toute cr&eacute;ature, car sa gr&acirc;ce est &eacute;ternelle.
+</div><div class='passukEn'>Who giveth food to all flesh,
+For His mercy endureth for ever.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>נותן לחם.</b> רמז כאן חסד (כל המעשים) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>נותן.</b> הודו לנותן לחם לכל הבריות ומשגיח על הכל : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>נותן, </b> וגם מזונו שאמרו חז''ל שבמזלא תליא, באמת הוא הנותן לחם לכל בשר, הגם שנראה שזה בא מן השמים והמערכה, הודו לאל השמים, הוא המנהיג את המערכה, ועקר המזון והטובות יוצאות מאתו, שהכל יוצא מחסדיו אשר הם מתמידות לעולם : <br><br><b>(כאן חסר פירוש כמה פרקים !!!) </b>
+<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">ה&#1453;וֹדוּ לְאֵ&#1443;ל הַשָּׁמָ&#1425;יִם כִּ&#1430;י לְעוֹלָ&#1443;ם חַסְדּֽוֹ:</span> <b>(פ)</b>
+</div><div class='passukFr'> Rendez hommage au Dieu du Ciel, car sa gr&acirc;ce est &eacute;ternelle.
+</div><div class='passukEn'>O give thanks unto the God of heaven,
+For His mercy endureth for ever.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>הודו לאל השמים.</b> המכין בהם מזון לכל בריה, עשרים וששה כי לעולם חסדו נאמרו במזמור זה כנגד עשרים וששה דורות שהיה העול' בלא תורה ונתקיים בחסדו של הקב''ה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לאל השמים.</b> לאל היושב בשמים העליון על כל : <small>(מצודת דוד)</small></div></div>
+
+</div><div id='prakimFoot' class='prakim'><span class='perekTitle' id='perekTitle0'><a id='perekTitleFoot0' href='0.html'>לפני הקריאה</a></span><span class='perekTitle' id='perekTitleFoot1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitleFoot2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitleFoot3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitleFoot4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitleFoot5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitleFoot6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitleFoot7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitleFoot8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitleFoot9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitleFoot10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitleFoot11'><a href='11.html'>11</a></span><span class='perekTitle' id='perekTitleFoot12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitleFoot13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitleFoot14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitleFoot15'><a href='15.html'>15</a></span><span class='perekTitle' id='perekTitleFoot16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitleFoot17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitleFoot18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitleFoot19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitleFoot20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitleFoot21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitleFoot22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitleFoot23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitleFoot24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitleFoot25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitleFoot26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitleFoot27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitleFoot28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitleFoot29'><a href='29.html'>29</a></span><span class='perekTitle' id='perekTitleFoot30'><a href='30.html'>30</a></span><span class='perekTitle' id='perekTitleFoot31'><a href='31.html'>31</a></span><span class='perekTitle' id='perekTitleFoot32'><a href='32.html'>32</a></span><span class='perekTitle' id='perekTitleFoot33'><a href='33.html'>33</a></span><span class='perekTitle' id='perekTitleFoot34'><a href='34.html'>34</a></span><span class='perekTitle' id='perekTitleFoot35'><a href='35.html'>35</a></span><span class='perekTitle' id='perekTitleFoot36'><a href='36.html'>36</a></span><span class='perekTitle' id='perekTitleFoot37'><a href='37.html'>37</a></span><span class='perekTitle' id='perekTitleFoot38'><a href='38.html'>38</a></span><span class='perekTitle' id='perekTitleFoot39'><a href='39.html'>39</a></span><span class='perekTitle' id='perekTitleFoot40'><a href='40.html'>40</a></span><span class='perekTitle' id='perekTitleFoot41'><a href='41.html'>41</a></span><span class='perekTitle' id='perekTitleFoot42'><a href='42.html'>42</a></span><span class='perekTitle' id='perekTitleFoot43'><a href='43.html'>43</a></span><span class='perekTitle' id='perekTitleFoot44'><a href='44.html'>44</a></span><span class='perekTitle' id='perekTitleFoot45'><a href='45.html'>45</a></span><span class='perekTitle' id='perekTitleFoot46'><a href='46.html'>46</a></span><span class='perekTitle' id='perekTitleFoot47'><a href='47.html'>47</a></span><span class='perekTitle' id='perekTitleFoot48'><a href='48.html'>48</a></span><span class='perekTitle' id='perekTitleFoot49'><a href='49.html'>49</a></span><span class='perekTitle' id='perekTitleFoot50'><a href='50.html'>50</a></span><span class='perekTitle' id='perekTitleFoot51'><a href='51.html'>51</a></span><span class='perekTitle' id='perekTitleFoot52'><a href='52.html'>52</a></span><span class='perekTitle' id='perekTitleFoot53'><a href='53.html'>53</a></span><span class='perekTitle' id='perekTitleFoot54'><a href='54.html'>54</a></span><span class='perekTitle' id='perekTitleFoot55'><a href='55.html'>55</a></span><span class='perekTitle' id='perekTitleFoot56'><a href='56.html'>56</a></span><span class='perekTitle' id='perekTitleFoot57'><a href='57.html'>57</a></span><span class='perekTitle' id='perekTitleFoot58'><a href='58.html'>58</a></span><span class='perekTitle' id='perekTitleFoot59'><a href='59.html'>59</a></span><span class='perekTitle' id='perekTitleFoot60'><a href='60.html'>60</a></span><span class='perekTitle' id='perekTitleFoot61'><a href='61.html'>61</a></span><span class='perekTitle' id='perekTitleFoot62'><a href='62.html'>62</a></span><span class='perekTitle' id='perekTitleFoot63'><a href='63.html'>63</a></span><span class='perekTitle' id='perekTitleFoot64'><a href='64.html'>64</a></span><span class='perekTitle' id='perekTitleFoot65'><a href='65.html'>65</a></span><span class='perekTitle' id='perekTitleFoot66'><a href='66.html'>66</a></span><span class='perekTitle' id='perekTitleFoot67'><a href='67.html'>67</a></span><span class='perekTitle' id='perekTitleFoot68'><a href='68.html'>68</a></span><span class='perekTitle' id='perekTitleFoot69'><a href='69.html'>69</a></span><span class='perekTitle' id='perekTitleFoot70'><a href='70.html'>70</a></span><span class='perekTitle' id='perekTitleFoot71'><a href='71.html'>71</a></span><span class='perekTitle' id='perekTitleFoot72'><a href='72.html'>72</a></span><span class='perekTitle' id='perekTitleFoot73'><a href='73.html'>73</a></span><span class='perekTitle' id='perekTitleFoot74'><a href='74.html'>74</a></span><span class='perekTitle' id='perekTitleFoot75'><a href='75.html'>75</a></span><span class='perekTitle' id='perekTitleFoot76'><a href='76.html'>76</a></span><span class='perekTitle' id='perekTitleFoot77'><a href='77.html'>77</a></span><span class='perekTitle' id='perekTitleFoot78'><a href='78.html'>78</a></span><span class='perekTitle' id='perekTitleFoot79'><a href='79.html'>79</a></span><span class='perekTitle' id='perekTitleFoot80'><a href='80.html'>80</a></span><span class='perekTitle' id='perekTitleFoot81'><a href='81.html'>81</a></span><span class='perekTitle' id='perekTitleFoot82'><a href='82.html'>82</a></span><span class='perekTitle' id='perekTitleFoot83'><a href='83.html'>83</a></span><span class='perekTitle' id='perekTitleFoot84'><a href='84.html'>84</a></span><span class='perekTitle' id='perekTitleFoot85'><a href='85.html'>85</a></span><span class='perekTitle' id='perekTitleFoot86'><a href='86.html'>86</a></span><span class='perekTitle' id='perekTitleFoot87'><a href='87.html'>87</a></span><span class='perekTitle' id='perekTitleFoot88'><a href='88.html'>88</a></span><span class='perekTitle' id='perekTitleFoot89'><a href='89.html'>89</a></span><span class='perekTitle' id='perekTitleFoot90'><a href='90.html'>90</a></span><span class='perekTitle' id='perekTitleFoot91'><a href='91.html'>91</a></span><span class='perekTitle' id='perekTitleFoot92'><a href='92.html'>92</a></span><span class='perekTitle' id='perekTitleFoot93'><a href='93.html'>93</a></span><span class='perekTitle' id='perekTitleFoot94'><a href='94.html'>94</a></span><span class='perekTitle' id='perekTitleFoot95'><a href='95.html'>95</a></span><span class='perekTitle' id='perekTitleFoot96'><a href='96.html'>96</a></span><span class='perekTitle' id='perekTitleFoot97'><a href='97.html'>97</a></span><span class='perekTitle' id='perekTitleFoot98'><a href='98.html'>98</a></span><span class='perekTitle' id='perekTitleFoot99'><a href='99.html'>99</a></span><span class='perekTitle' id='perekTitleFoot100'><a href='100.html'>100</a></span><span class='perekTitle' id='perekTitleFoot101'><a href='101.html'>101</a></span><span class='perekTitle' id='perekTitleFoot102'><a href='102.html'>102</a></span><span class='perekTitle' id='perekTitleFoot103'><a href='103.html'>103</a></span><span class='perekTitle' id='perekTitleFoot104'><a href='104.html'>104</a></span><span class='perekTitle' id='perekTitleFoot105'><a href='105.html'>105</a></span><span class='perekTitle' id='perekTitleFoot106'><a href='106.html'>106</a></span><span class='perekTitle' id='perekTitleFoot107'><a href='107.html'>107</a></span><span class='perekTitle' id='perekTitleFoot108'><a href='108.html'>108</a></span><span class='perekTitle' id='perekTitleFoot109'><a href='109.html'>109</a></span><span class='perekTitle' id='perekTitleFoot110'><a href='110.html'>110</a></span><span class='perekTitle' id='perekTitleFoot111'><a href='111.html'>111</a></span><span class='perekTitle' id='perekTitleFoot112'><a href='112.html'>112</a></span><span class='perekTitle' id='perekTitleFoot113'><a href='113.html'>113</a></span><span class='perekTitle' id='perekTitleFoot114'><a href='114.html'>114</a></span><span class='perekTitle' id='perekTitleFoot115'><a href='115.html'>115</a></span><span class='perekTitle' id='perekTitleFoot116'><a href='116.html'>116</a></span><span class='perekTitle' id='perekTitleFoot117'><a href='117.html'>117</a></span><span class='perekTitle' id='perekTitleFoot118'><a href='118.html'>118</a></span><span class='perekTitle' id='perekTitleFoot119'><a href='119.html'>119</a></span><span class='perekTitle' id='perekTitleFoot120'><a href='120.html'>120</a></span><span class='perekTitle' id='perekTitleFoot121'><a href='121.html'>121</a></span><span class='perekTitle' id='perekTitleFoot122'><a href='122.html'>122</a></span><span class='perekTitle' id='perekTitleFoot123'><a href='123.html'>123</a></span><span class='perekTitle' id='perekTitleFoot124'><a href='124.html'>124</a></span><span class='perekTitle' id='perekTitleFoot125'><a href='125.html'>125</a></span><span class='perekTitle' id='perekTitleFoot126'><a href='126.html'>126</a></span><span class='perekTitle' id='perekTitleFoot127'><a href='127.html'>127</a></span><span class='perekTitle' id='perekTitleFoot128'><a href='128.html'>128</a></span><span class='perekTitle' id='perekTitleFoot129'><a href='129.html'>129</a></span><span class='perekTitle' id='perekTitleFoot130'><a href='130.html'>130</a></span><span class='perekTitle' id='perekTitleFoot131'><a href='131.html'>131</a></span><span class='perekTitle' id='perekTitleFoot132'><a href='132.html'>132</a></span><span class='perekTitle' id='perekTitleFoot133'><a href='133.html'>133</a></span><span class='perekTitle' id='perekTitleFoot134'><a href='134.html'>134</a></span><span class='perekTitle' id='perekTitleFoot135'><a href='135.html'>135</a></span><span class='perekTitle' id='perekTitleFoot136'><a id='linkSelectedHead' class='linkSelected' href='136.html'>136</a></span><span class='perekTitle' id='perekTitleFoot137'><a href='137.html'>137</a></span><span class='perekTitle' id='perekTitleFoot138'><a href='138.html'>138</a></span><span class='perekTitle' id='perekTitleFoot139'><a href='139.html'>139</a></span><span class='perekTitle' id='perekTitleFoot140'><a href='140.html'>140</a></span><span class='perekTitle' id='perekTitleFoot141'><a href='141.html'>141</a></span><span class='perekTitle' id='perekTitleFoot142'><a href='142.html'>142</a></span><span class='perekTitle' id='perekTitleFoot143'><a href='143.html'>143</a></span><span class='perekTitle' id='perekTitleFoot144'><a href='144.html'>144</a></span><span class='perekTitle' id='perekTitleFoot145'><a href='145.html'>145</a></span><span class='perekTitle' id='perekTitleFoot146'><a href='146.html'>146</a></span><span class='perekTitle' id='perekTitleFoot147'><a href='147.html'>147</a></span><span class='perekTitle' id='perekTitleFoot148'><a href='148.html'>148</a></span><span class='perekTitle' id='perekTitleFoot149'><a href='149.html'>149</a></span><span class='perekTitle' id='perekTitleFoot150'><a href='150.html'>150</a></span> <span class='perekTitle' id='perekTitleFoot151'><a  href='151.html'>אחרי הקריאה</a></span></span></div></div></div></body></html>

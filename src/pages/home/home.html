@@ -1,14 +1,46 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding class="content">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <div class='dateTitle'>
+    {{getTodayDate()}}
+    
+    </div>
+
+
+    
+    <div class="divItem">
+            <span> Day #</span>
+            <select [(ngModel)]="selectedDayInMonth">
+                <option *ngFor="let day of counter(30),let dayNum=index" [selected]="dayNum==(todayDayInMonth-1)">{{dayNum+1}}</option>
+            </select>
+            <span>
+                    in the month
+            </span>  
+            <button class="buttonInAccordion" ion-button (click)="goToTehilimDayMonth()">Go </button>
+        
+        </div>
+
+    <div class="divItem">
+        <span> Day #</span>
+        <select [(ngModel)]="selectedDayInWeek">
+            <option *ngFor="let day of counter(7),let dayNum=index" [selected]="dayNum==(todayDayInWeek-1)">{{dayNum+1}}</option>
+        </select>
+        <span>
+                in the week
+        </span>  
+        <button class="buttonInAccordion" ion-button (click)="goToTehilimDayWeek()">Go </button>
+    
+    </div>
+    <div class="divItem">
+    <button class="buttonInAccordion" ion-button (click)="goToTikunHaklali()"> Tikun Haklali</button>
+    </div>
+    <div class="divItem">
+    <button class="buttonInAccordion" ion-button (click)="goToFavorites()"> Favorites</button>
+   
+    <ion-icon (click)="presentPopoverFavorites($event)" name="settings"></ion-icon>
+    </div>
+
+    <div class="divItem">
+    <button class="buttonInAccordion" ion-button (click)="goToAllTehilim()"> All Tehilim</button>
+</div>
+
 </ion-content>
