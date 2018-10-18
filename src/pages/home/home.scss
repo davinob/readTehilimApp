@@ -2,7 +2,7 @@ page-home {
 
 
     .buttonInAccordion {
-        background-color: #5475aa;
+        background-color: #7d13cb;
         color: #f9ffff;
         cursor: pointer;
         padding: 18px;
@@ -17,7 +17,7 @@ page-home {
 
     .divItem
     {
-        color: #5475aa;
+        color: #7d13cb;
         background-color: #f9ffff;
         border: none;
         outline: none;
@@ -32,7 +32,7 @@ page-home {
 
     .dateTitle
     {
-        color: #1c4179;
+        color: #42109e;
         font-size: 20px;
         font-weight: bolder;
         margin: 15px;
@@ -47,5 +47,12 @@ page-home {
         font-size:30px;
     }
 
+
+    ion-icon {
+        display: inline-block;
+        font-size: 1.2em;
+        color: #7d13cb;
+    }
+    
 
 }
