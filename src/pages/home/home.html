@@ -31,6 +31,16 @@
     
     </div>
     <div class="divItem">
+            <span> Book #</span>
+            <select [(ngModel)]="selectedBook">
+                <option *ngFor="let book of counter(5),let bookNum=index" [selected]="bookNum==(selectedBook-1)">{{bookNum+1}}</option>
+            </select>
+            
+            <button class="buttonInAccordion" ion-button (click)="goToTehilimBook()">Go </button>
+        
+    </div>
+
+    <div class="divItem">
     <button class="buttonInAccordion" ion-button (click)="goToTikunHaklali()"> Tikun Haklali</button>
     </div>
     <div class="divItem">
@@ -42,5 +52,9 @@
     <div class="divItem">
     <button class="buttonInAccordion" ion-button (click)="goToAllTehilim()"> All Tehilim</button>
 </div>
+
+<div class="zhuiot" >
+        <a href="#" (click)="goToZhuiot()"> Copyright</a>
+    </div>
 
 </ion-content>

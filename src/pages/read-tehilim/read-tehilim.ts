@@ -49,6 +49,14 @@ return favStr;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReadTehilimPage');
+
+    if (this.typeOfRead=="Zhuiot")
+    {
+      this.url="assets/iframeTemplates/zhouiot.html";
+      this.myObjectView.nativeElement.data=this.url;
+
+      return;
+    }
    
   this.url="assets/iframeTemplates/Tehilim/"+this.start+".html?typeOfRead="+this.typeOfRead+"&start="+this.start+"&end="+this.end;
 
@@ -60,11 +68,11 @@ return favStr;
 
   if (this.start==119.1)
   {
-    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead="+this.typeOfRead+"&start=119&end=119&part1or2=1";
+    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead=KYT&start=119&end=119&part1or2=1";
   }
   if (this.start==119.2)
   {
-    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead="+this.typeOfRead+"&start=119&end=119&part1or2=2";
+    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead=KYT&start=119&end=119&part1or2=2";
   }
   
   if (this.start==0)//tikunHaklali

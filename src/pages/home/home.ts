@@ -21,6 +21,8 @@ export class HomePage {
   selectedDayInWeek:number;
   selectedDayInMonth:number;
 
+  selectedBook:number;
+
   showFavorites:boolean=false;
   selectedFavorites:Array<number>;
 
@@ -71,6 +73,14 @@ export class HomePage {
     {start:107,end:120},
     {start:121,end:150}
   ];
+
+  tehilimBooks=[
+    {start:1, end:41},
+    {start:42,end:72},
+    {start:73,end:89},
+    {start:90,end:106},
+    {start:107,end:150}
+  ];
   
 
   favorites:Array<number>;
@@ -79,6 +89,8 @@ export class HomePage {
     this.getTodayDate();
     this.selectedDayInWeek=this.todayDayInWeek;
     this.selectedDayInMonth=this.todayDayInMonth;
+
+    this.loadSelectedBook();
     
 
   }
@@ -95,6 +107,16 @@ export class HomePage {
     this.favorites= await this.storage.get('favorites');
     if (!this.favorites)
     this.favorites=new Array();
+
+   
+
+  }
+
+  async loadSelectedBook()
+  {
+    this.selectedBook= await this.storage.get('selectedBook');
+    if (!this.selectedBook)
+      this.selectedBook=1;
   }
 
   getTodayDate():string
@@ -108,7 +130,7 @@ export class HomePage {
     this.todayDayInWeek=date.getDay()+1;
     let dayNames=["Monday","Tuesday","Wednesday","Thursday","Friday","Shabbat","Sunday"];
    
-    return dayNames[date.getDay()-1]+" "+todayDayHeb.toString();
+    return dayNames[((date.getDay()-1)+7)%7]+" "+todayDayHeb.toString();
 
     
   }
@@ -140,6 +162,14 @@ export class HomePage {
     this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayWeek",start:this.tehilimDaysInWeek[this.selectedDayInWeek-1].start,end:this.tehilimDaysInWeek[this.selectedDayInWeek-1].end});
   }
 
+
+  goToTehilimBook()
+  {
+     this.storage.set('selectedBook',this.selectedBook );
+
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"BookNum",start:this.tehilimBooks[this.selectedBook-1].start,end:this.tehilimBooks[this.selectedBook-1].end});
+  }
+
   goToAllTehilim()
   {
     this.navCtrl.push('ReadTehilimPage',{typeOfRead:"AllTehilim",start:1,end:150});
@@ -165,6 +195,12 @@ export class HomePage {
       this.navCtrl.push('ReadTehilimPage',{typeOfRead:"Favorites",favorites:this.favorites});
     else
       this.presentToast("No Favorites chosen yet. Please add some.");
+  }
+
+  goToZhuiot()
+  {
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"Zhuiot"});
+ 
   }
 
 

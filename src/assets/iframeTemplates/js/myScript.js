@@ -24,7 +24,7 @@
 		console.log("LAST START AND NEW START");
 		console.log(lastStartForThisTypeOfRead);
 		console.log(start);
-		if (lastStartForThisTypeOfRead!=start) //in that case no need to update to LastPageSeen for this Type of read
+		if (lastStartForThisTypeOfRead!=start ||typeOfRead=="KYT") //in that case no need to update to LastPageSeen for this Type of read
 		{
 			localStorage.setItem(typeOfRead+"Start",start);
 		}
