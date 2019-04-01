@@ -1,6 +1,21 @@
 page-home {
 
 
+    .settingsButton {
+        background-color: #62ccec;
+        color: #f9ffff;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 22px;
+        font-weight: bold;
+        transition: 0.4s;
+        margin-bottom:15px;
+    }
+
+
     .buttonInAccordion {
         background-color: #7d13cb;
         color: #f9ffff;
@@ -29,6 +44,10 @@ page-home {
         align-content: center;
         margin-bottom:25px;
     }
+
+    .settingsIcon{
+        padding-right:3px;
+        }
 
     .dateTitle
     {

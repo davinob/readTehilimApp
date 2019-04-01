@@ -22,6 +22,7 @@ export class HomePage {
   selectedDayInMonth:number;
 
   selectedBook:number;
+  cssText="";
 
   showFavorites:boolean=false;
   selectedFavorites:Array<number>;
@@ -91,8 +92,14 @@ export class HomePage {
     this.selectedDayInMonth=this.todayDayInMonth;
 
     this.loadSelectedBook();
+   
     
 
+  }
+
+  ionViewDidEnter()
+  {
+    this.loadCssText();
   }
 
   presentPopoverFavorites(myEvent) {
@@ -118,6 +125,13 @@ export class HomePage {
     if (!this.selectedBook)
       this.selectedBook=1;
   }
+  
+  async loadCssText()
+  {
+    this.cssText= await this.storage.get('cssText');
+    if (!this.cssText)
+      this.cssText=null;
+  }
 
   getTodayDate():string
   {
@@ -136,6 +150,10 @@ export class HomePage {
   }
 
  
+  goToSettings()
+  {
+    this.navCtrl.push("SettingsPage");
+  }
 
   goToTehilimDayMonth(){
 
@@ -144,12 +162,12 @@ export class HomePage {
 
     if (this.todayDayInMonth==29&&this.tomorrowDay==1)
     {
-      this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayMonth",start:140,end:150});
+      this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayMonth",start:140,end:150,cssText:this.cssText});
    
     }
     else
     {
-    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayMonth",start:this.tehilimDaysInMonth[this.selectedDayInMonth-1].start,end:this.tehilimDaysInMonth[this.selectedDayInMonth-1].end});
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayMonth",start:this.tehilimDaysInMonth[this.selectedDayInMonth-1].start,end:this.tehilimDaysInMonth[this.selectedDayInMonth-1].end,cssText:this.cssText});
     }
   }
 
@@ -159,7 +177,7 @@ export class HomePage {
     console.log(this.tehilimDaysInWeek[0]);
     
     
-    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayWeek",start:this.tehilimDaysInWeek[this.selectedDayInWeek-1].start,end:this.tehilimDaysInWeek[this.selectedDayInWeek-1].end});
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"DayWeek",start:this.tehilimDaysInWeek[this.selectedDayInWeek-1].start,end:this.tehilimDaysInWeek[this.selectedDayInWeek-1].end,cssText:this.cssText});
   }
 
 
@@ -167,18 +185,18 @@ export class HomePage {
   {
      this.storage.set('selectedBook',this.selectedBook );
 
-    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"BookNum",start:this.tehilimBooks[this.selectedBook-1].start,end:this.tehilimBooks[this.selectedBook-1].end});
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"BookNum",start:this.tehilimBooks[this.selectedBook-1].start,end:this.tehilimBooks[this.selectedBook-1].end,cssText:this.cssText});
   }
 
   goToAllTehilim()
   {
-    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"AllTehilim",start:1,end:150});
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"AllTehilim",start:1,end:150,cssText:this.cssText});
   
   }
 
   goToTikunHaklali()
   {
-    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"TikunHaklali",start:0,end:0});
+    this.navCtrl.push('ReadTehilimPage',{typeOfRead:"TikunHaklali",start:0,end:0,cssText:this.cssText});
   }
 
   counter(i: number) {
@@ -192,7 +210,7 @@ export class HomePage {
     console.log(this.favorites);
     console.log(this.favorites.length);
     if (this.favorites && this.favorites.length>0)
-      this.navCtrl.push('ReadTehilimPage',{typeOfRead:"Favorites",favorites:this.favorites});
+      this.navCtrl.push('ReadTehilimPage',{typeOfRead:"Favorites",favorites:this.favorites,cssText:this.cssText});
     else
       this.presentToast("No Favorites chosen yet. Please add some.");
   }

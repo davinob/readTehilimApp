@@ -7,6 +7,22 @@
 	var part1or2 =searchParams.get('part1or2');
 	var typeOfRead =searchParams.get('typeOfRead');
 	var favorites =searchParams.get('favorites');
+	var cssText=searchParams.get('cssText');
+
+	console.log("CSS TEXT FROM PARAMS:"+cssText);
+	
+	if (cssText)
+	{
+		localStorage.setItem("cssText",cssText);
+	}
+	else
+	{
+		cssText=localStorage.getItem("cssText");
+	}
+
+	console.log(cssText);
+	updateFont();
+
 	var myFavorites;
 
 	
@@ -71,6 +87,43 @@ function openNav() {
 	}
 
 
+
+function updateFont()
+{
+	var html=document.getElementsByTagName('html')[0];
+	if (cssText==null ||cssText=="NaN")
+	{
+		console.log("CSS TEXT NULL OR NAN");
+		cssText="  --fontSizeIvrit:28px;"+
+		"--fontFamilyIvrit:'Arial';"+
+		"--fontSizepassukFr:23px;"+
+		"--fontFamilypassukFr:'Arial';"+
+		"--fontSizepassukEn:23px;"+
+		"--fontFamilypassukEn:'Arial';"+
+		"--fontSizerashi:23px;"+
+		"--fontFamilyrashi:'Arial';"+
+		"--fontSizeonkelos:23px;"+
+		"--fontFamilyonkelos:'Arial';"+
+		"--fontSizemezudatDavid:23px;"+
+		"--fontFamilymezudatDavid:'Arial';"+
+		"--fontSizeralbag:23px;"+
+		"--fontFamilyralbag:'Arial';"+
+		"--fontSizemalbim:23px;"+
+		"--fontFamilymalbim:'Arial';"+
+		"--fontSizemezudatZion:23px;"+
+		"--fontFamilymezudaZion:'Arial';"
+	}
+
+	console.log(cssText);
+	html.style.cssText=cssText;
+}
+
+
+
+
+
+
+	
 
 function hideShowById(id) {
 	var x = document.getElementById(id);
@@ -240,6 +293,7 @@ function initClassesBasedOnCookies() {
 	
 
 }
+
 
 
 function hideShow(theClass, obj) {

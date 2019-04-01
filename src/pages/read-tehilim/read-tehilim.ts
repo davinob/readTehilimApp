@@ -25,6 +25,7 @@ export class ReadTehilimPage {
   url:string;
   favorites:Array<number>;
   typeOfRead:string;
+  cssText:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -32,6 +33,7 @@ export class ReadTehilimPage {
     this.end=navParams.get('end');
     this.favorites=navParams.get('favorites');
     this.typeOfRead=navParams.get('typeOfRead');
+    this.cssText=navParams.get('cssText');
     
     
   }
@@ -58,27 +60,27 @@ return favStr;
       return;
     }
    
-  this.url="assets/iframeTemplates/Tehilim/"+this.start+".html?typeOfRead="+this.typeOfRead+"&start="+this.start+"&end="+this.end;
+  this.url="assets/iframeTemplates/Tehilim/"+this.start+".html?typeOfRead="+this.typeOfRead+"&start="+this.start+"&end="+this.end+"&cssText="+this.cssText;
 
   if (this.favorites)
   {
     
-    this.url="assets/iframeTemplates/Tehilim/"+this.favorites[0]+".html?typeOfRead="+this.typeOfRead+"&favorites="+this.makeFavoritesString()+"&start="+this.favorites[0];
+    this.url="assets/iframeTemplates/Tehilim/"+this.favorites[0]+".html?typeOfRead="+this.typeOfRead+"&favorites="+this.makeFavoritesString()+"&start="+this.favorites[0]+"&cssText="+this.cssText;
   }
 
   if (this.start==119.1)
   {
-    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead=KYT&start=119&end=119&part1or2=1";
+    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead=KYT&start=119&end=119&part1or2=1"+"&cssText="+this.cssText;
   }
   if (this.start==119.2)
   {
-    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead=KYT&start=119&end=119&part1or2=2";
+    this.url="assets/iframeTemplates/Tehilim/119.html?typeOfRead=KYT&start=119&end=119&part1or2=2"+"&cssText="+this.cssText;
   }
   
   if (this.start==0)//tikunHaklali
   {
     console.log("TIKUN HAKLALI");
-    this.url="assets/iframeTemplates/Tehilim/16.html?typeOfRead="+this.typeOfRead+"&start=16&end=150&typeOfRead=TikunHaklali";
+    this.url="assets/iframeTemplates/Tehilim/16.html?typeOfRead="+this.typeOfRead+"&start=16&end=150&typeOfRead=TikunHaklali"+"&cssText="+this.cssText;
   }
   
 

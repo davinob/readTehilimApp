@@ -1,0 +1,34 @@
+<ion-header>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="pirushBlock" *ngFor="let pirush of pirushim">
+    <div class="name">{{pirush.title}} </div>
+    <div class="title">Size: {{pirush.size}}px</div>
+    <ion-item>
+        <ion-range (ionChange)="updateStorageAndFont(pirush)" [(ngModel)]="pirush.size" min="1" max="100" step="2">
+          <ion-label slot="start">1</ion-label>
+          <ion-label slot="end">100</ion-label>
+        </ion-range>
+      </ion-item>
+
+      <div class="title">Font: </div>
+      <ion-item>
+        <ion-select (ionChange)="updateStorageAndFont(pirush)" [(ngModel)]="pirush.font"> 
+          <ion-option  *ngFor="let font of fonts" value="{{font}}">{{font}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+    <div *ngIf="pirush.name=='passukFr' || pirush.name=='passukEn'"  class="example" id="font{{pirush.name}}">Example: Happy is the man that hath not walked in the counsel of the wicked,
+        Nor stood in the way of sinners,
+        Nor sat in the seat of the scornful. </div>
+  
+    <div *ngIf="pirush.name!='passukFr' && pirush.name!='passukEn'"  class="example" id="font{{pirush.name}}">דוגמא:  אַ&#1445;שְֽׁרֵי-הָאִ&#1431;ישׁ אֲשֶׁ&#1444;ר | לֹ&#1445;א הָלַךְ&#1454; בַּעֲצַ&#1450;ת רְשָׁ&#1451;עִ&#1445;ים וּבְדֶ&#1443;רֶךְ חַ&#1453;טָּאִים לֹ&#1445;א עָמָ&#1425;ד וּבְמוֹשַׁ&#1445;ב לֵ&#1437;צִ&#1431;ים לֹ&#1443;א יָשָֽׁב: </div>
+
+  </div>
+
+
+</ion-content>
