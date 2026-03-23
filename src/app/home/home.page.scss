@@ -1,27 +1,56 @@
-#container {
+.historyButton {
+  --background: #62ccec;
+  --color: #f9ffff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.historyIcon {
+  padding-right: 3px;
+}
+
+.buttonInAccordion {
+  --background: #7d13cb;
+  --color: #f9ffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.divItem {
+  color: #7d13cb;
+  background-color: #f9ffff;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  align-content: center;
+  margin-bottom: 25px;
 }
 
-#container strong {
+.dateTitle {
+  color: #42109e;
   font-size: 20px;
-  line-height: 26px;
+  font-weight: bolder;
+  margin: 15px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.content {
+  font-size: 30px;
 }
 
-#container a {
-  text-decoration: none;
+ion-icon {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #7d13cb;
+  cursor: pointer;
+}
+
+.zhuiot {
+  margin-top: 30px;
+  text-align: center;
 }

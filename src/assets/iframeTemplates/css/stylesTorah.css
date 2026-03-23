@@ -1,0 +1,455 @@
+.newPassuk {
+    direction: rtl;
+    margin-bottom:2px;
+    width:100%;
+}
+
+.theBody
+{
+    margin-left: 6px;
+    margin-right: 6px;
+
+
+	}
+	
+.theBodyMain
+{
+    margin-top: 5%;
+    text-align: center;
+    direction: rtl;
+  
+}
+  
+
+
+
+
+.prakim
+{
+	margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-left: 44px;
+    box-sizing: border-box;
+}
+
+	
+.theContent
+{
+padding-top: 5px;
+}
+
+
+.perekTitle {
+display: inline-block;
+padding-left: 5px;  
+
+}
+
+
+.prakim
+{
+	width: 100%;
+    white-space: nowrap;
+    color: white;
+    margin-bottom: 20px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+   }
+   
+   a
+{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+    border-radius: 10%;
+    text-decoration: unset;
+    margin-left: 8px;
+    padding: 2px;
+    border: 2px solid;
+	display: inline-block;
+	background-color: #31567f;
+    color: #e3fbff;
+
+    font-weight: bold;
+}
+   
+ .linkSelected
+ {
+	border: 4px solid #00e3ff;
+ }
+   
+
+
+
+
+
+.pirushim{
+	display: inline-block;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.inSeferTitle {
+    font-weight: bold;
+    width: 100%;
+    float: left;
+    margin-top: 11px;
+}
+
+
+
+
+
+
+
+
+
+html{
+    --fontSizeIvrit:28px;
+    --fontSizeOthers:23px;
+}
+
+
+.passukFr {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(210, 236, 239, 0.42);
+     display:inline-block;
+     margin-bottom:2px;
+     width:100%;
+     direction: ltr;
+}
+
+.passukEn {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(210, 236, 239, 0.42);
+     display:inline-block;
+     margin-bottom:2px;
+    width:100%;
+    direction: ltr;
+    
+}
+
+.passukIvrit {
+    font-size: var(--fontSizeIvrit);
+    display:inline-block;
+    margin-bottom:3px;
+    width:100%;
+		
+}
+
+
+
+
+.rashi {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(7, 152, 236, 0.14);
+    color: #212aa2;
+    display:inline-block;
+    margin-bottom:2px;
+    width:100%;
+}
+
+
+
+.onkelos {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(221, 210, 255, 0.42);
+    display: inline-block;
+    margin-bottom:2px;
+    width:100%;
+}
+
+.mezudatDavid {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(45, 165, 82, 0.14);
+    color: #196311;
+    display: inline-block;
+    margin-bottom:2px;
+    width:100%;
+}
+
+.ralbag {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(45, 165, 82, 0.14);
+    color: #196311;
+    display:inline-block;
+    margin-bottom:2px;
+    width:100%;
+}
+
+
+.malbim {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(193, 107, 199, 0.14);
+    color: #8e1e7a;
+    display:inline-block;
+    margin-bottom:2px;
+    width:100%;
+}
+
+.mezudatZion {
+    font-size: var(--fontSizeOthers);
+    background-color: rgba(15, 67, 255, 0.14);
+    color: #242298;
+    display:inline-block;
+    margin-bottom:2px;
+    width:100%;
+}
+
+
+.line{
+    width: 100%;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+
+.button {
+    background-color: #4a2dbb7a;
+    border: none;
+    font-size: 35px;
+    font-family: serif;
+    font-weight: bolder;
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+    display: inline-grid;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+}	
+
+.bigButton
+{
+border:5px solid #173ea7
+}
+
+.newSefer
+{
+	margin-bottom:15px;
+}
+
+
+#buttonNav {
+    position: fixed;
+    top: 38px;
+    left: 4px;
+    z-index: 100;
+    font-size: 24px !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(49, 86, 127, 0.92);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+}
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: rgba(61, 109, 161, 0.97);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding-top: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(237, 241, 241, 0.911);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+.trads{
+	display: inline-block;
+    width: 100%;
+    font-size: 35px;
+    font-family: serif;
+    font-weight: bolder;
+    color: white;
+    }
+    
+
+
+
+.active {
+border:5px solid #173ea7;
+}
+
+.buttonInAccordion {
+    background-color: #5475aa;
+    color: #f9ffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+
+.accordion {
+   background-color: #31567f;
+    color: #e3fbff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  font-size: 30px;
+    transition: 0.4s;
+	 font-weight: bold;
+}
+
+
+
+.panel {
+	width:100%;
+   
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+@font-face {
+    font-family: 'Alef';
+    src: url('../fonts/Alef-regular.ttf');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'David';
+    src: url('../fonts/david.ttf');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Hadasim';
+    src: url('../fonts/hadasim.ttf');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Hillel';
+    src: url('../fonts/hillel.ttf');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/rubik.ttf');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+/* ==================== ZOOM CONTROLS ==================== */
+
+#zoomControls {
+    position: fixed;
+    bottom: 4px;
+    right: 3px;
+    z-index: 90;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    background: rgba(200,200,200,0.6);
+    border-radius: 4px;
+    padding: 1px;
+}
+
+#zoomControls button {
+    background: rgba(255,255,255,0.8);
+    color: #555;
+    border: none;
+    border-radius: 3px;
+    width: 22px;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.12s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 20px;
+    padding: 0;
+}
+
+#zoomControls button:active {
+    background: #31567f;
+    color: white;
+    transform: scale(0.93);
+}
+
+#zoomToast {
+    position: fixed;
+    bottom: 30px;
+    right: 3px;
+    z-index: 91;
+    background: rgba(30,62,94,0.9);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+}
+
+#zoomToast.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

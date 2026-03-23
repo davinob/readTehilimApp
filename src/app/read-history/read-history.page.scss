@@ -1,0 +1,72 @@
+.historyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.historyTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #42109e;
+}
+
+.emptyState {
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.dayGroup {
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dayDate {
+  font-size: 17px;
+  font-weight: 600;
+  color: #42109e;
+}
+
+.dayCount {
+  --background: #7d13cb;
+  --color: white;
+  font-size: 13px;
+}
+
+.chaptersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chapterChip {
+  background: #e8e0f5;
+  color: #7d13cb;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.chapterNum {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.readCount {
+  --background: #62ccec;
+  --color: white;
+  font-size: 14px;
+}

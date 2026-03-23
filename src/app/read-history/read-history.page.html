@@ -1,0 +1,50 @@
+<ion-content class="ion-padding">
+  <div class="historyHeader">
+    <span class="historyTitle">Read History</span>
+    <ion-button fill="clear" size="small" (click)="clearHistory()">
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <ion-segment [value]="selectedTab" (ionChange)="onTabChange($event)">
+    <ion-segment-button value="daily">
+      <ion-label>Daily</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="chapters">
+      <ion-label>Per Tehilim</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- Daily Tab -->
+  <div *ngIf="selectedTab === 'daily'">
+    <div *ngIf="dayGroups.length === 0" class="emptyState">
+      No reading history yet.
+    </div>
+
+    <div *ngFor="let group of dayGroups" class="dayGroup">
+      <div class="dayHeader">
+        <span class="dayDate">{{ group.displayDate }}</span>
+        <ion-badge class="dayCount">{{ group.chapters.length }} tehilim</ion-badge>
+      </div>
+      <div class="chaptersList">
+        <span *ngFor="let ch of group.chapters" class="chapterChip">{{ ch }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Per Tehilim Tab -->
+  <div *ngIf="selectedTab === 'chapters'">
+    <div *ngIf="chapterStats.length === 0" class="emptyState">
+      No reading history yet.
+    </div>
+
+    <ion-list>
+      <ion-item *ngFor="let stat of chapterStats">
+        <ion-label>
+          <span class="chapterNum">Tehilim {{ stat.chapter }}</span>
+        </ion-label>
+        <ion-badge slot="end" class="readCount">{{ stat.count }}x</ion-badge>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
