@@ -24,10 +24,12 @@
     <div *ngFor="let group of dayGroups" class="dayGroup">
       <div class="dayHeader">
         <span class="dayDate">{{ group.displayDate }}</span>
-        <ion-badge class="dayCount">{{ group.chapters.length }} tehilim</ion-badge>
+        <ion-badge class="dayCount">{{ group.totalReadings }} readings</ion-badge>
       </div>
       <div class="chaptersList">
-        <span *ngFor="let ch of group.chapters" class="chapterChip">{{ ch }}</span>
+        <span *ngFor="let ch of group.chapters" class="chapterChip">
+          {{ ch.chapter }}<span *ngIf="ch.count > 1" class="chipCount">×{{ ch.count }}</span>
+        </span>
       </div>
     </div>
   </div>

@@ -101,7 +101,10 @@ export class HomePage implements OnInit {
   }
 
   goToTehilimDayMonth() {
-    if (this.todayDayInMonth === 29 && this.tomorrowDay === 1) {
+    // If the user requested the day that matches today and today is the 29th
+    // of a 29-day month (tomorrow rolls to 1), show the special combined range.
+    // If the user explicitly selected another day in the dropdown, respect that selection.
+    if (this.selectedDayInMonth === this.todayDayInMonth && this.todayDayInMonth === 29 && this.tomorrowDay === 1) {
       this.navigateToRead('DayMonth', 140, 150);
     } else {
       const range = this.tehilimDaysInMonth[this.selectedDayInMonth - 1];

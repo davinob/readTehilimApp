@@ -99,6 +99,26 @@ function initPinchZoom() {
 
 // ==================== READ HISTORY TRACKING ====================
 
+var tehilimReadTime = {
+	1:13,2:18,3:14,4:15,5:22,6:17,7:28,8:15,9:34,10:34,
+	11:14,12:16,13:11,14:14,15:11,16:18,17:26,18:78,19:26,20:14,
+	21:21,22:50,23:11,24:18,25:30,26:17,27:29,28:18,29:18,30:19,
+	31:43,32:22,33:31,34:32,35:45,36:19,37:58,38:33,39:25,40:36,
+	41:23,42:26,43:11,44:38,45:31,46:20,47:15,48:22,49:32,50:34,
+	51:30,52:17,53:15,54:12,55:38,56:24,57:21,58:20,59:30,60:23,
+	61:13,62:22,63:18,64:17,65:22,66:29,67:11,68:63,69:56,70:10,
+	71:39,72:32,73:39,74:38,75:17,76:17,77:31,78:106,79:26,80:28,
+	81:25,82:12,83:25,84:23,85:18,86:29,87:11,88:29,89:75,90:28,
+	91:22,92:22,93:9,94:33,95:18,96:22,97:19,98:15,99:17,100:9,
+	101:16,102:42,103:33,104:53,105:58,106:66,107:57,108:19,109:45,110:12,
+	111:15,112:16,113:11,114:11,115:26,116:25,117:3,118:39,119:207,120:10,
+	121:11,122:13,123:8,124:12,125:10,126:10,127:11,128:10,129:11,130:11,
+	131:6,132:26,133:7,134:5,135:33,136:33,137:16,138:14,139:36,140:23,
+	141:19,142:15,143:22,144:27,145:29,146:17,147:28,148:21,149:13,150:8
+};
+
+var _historyTimer = null;
+
 function startHistoryTracking() {
 	var path = window.location.pathname;
 	var match = path.match(/\/(\d+)\.html/);
@@ -106,19 +126,24 @@ function startHistoryTracking() {
 	var chapter = parseInt(match[1]);
 	if (chapter < 1 || chapter > 150) return;
 
-	var history = JSON.parse(localStorage.getItem("readHistory") || "[]");
-	var now = new Date();
-	var dateStr = now.getFullYear() + '-' +
-		String(now.getMonth() + 1).padStart(2, '0') + '-' +
-		String(now.getDate()).padStart(2, '0');
+	var delaySec = tehilimReadTime[chapter] || 30;
+	var delayMs = delaySec * 1000;
 
-	history.push({
-		date: dateStr,
-		chapter: chapter,
-		timestamp: now.getTime()
-	});
+	if (_historyTimer) clearTimeout(_historyTimer);
+	_historyTimer = setTimeout(function () {
+		var history = JSON.parse(localStorage.getItem("readHistory") || "[]");
+		var now = new Date();
+		var dateStr = now.getFullYear() + '-' +
+			String(now.getMonth() + 1).padStart(2, '0') + '-' +
+			String(now.getDate()).padStart(2, '0');
 
-	localStorage.setItem("readHistory", JSON.stringify(history));
+		history.push({
+			date: dateStr,
+			chapter: chapter,
+			timestamp: now.getTime()
+		});
+		localStorage.setItem("readHistory", JSON.stringify(history));
+	}, delayMs);
 }
 
 // ==================== URL PARAMS & NAVIGATION ====================
@@ -135,6 +160,11 @@ function startHistoryTracking() {
 	var myFavorites;
 	var lastStartForThisTypeOfRead;
 
+	var _todayStr = (function() {
+		var d = new Date();
+		return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+	})();
+
 	if (start)
 	{
 		localStorage.setItem('start', start);
@@ -142,21 +172,28 @@ function startHistoryTracking() {
 		localStorage.setItem('typeOfRead', typeOfRead);
 		localStorage.setItem('favorites', favorites);
 
-		lastStartForThisTypeOfRead = localStorage.getItem(typeOfRead + "Start");
-		if (lastStartForThisTypeOfRead != start || typeOfRead == "KYT")
-		{
-			localStorage.setItem(typeOfRead + "Start", start);
-		}
-		else
-		{
-			let lastVisited = localStorage.getItem(typeOfRead + "LastVisited");
-			let actualPage = window.location.href.substring(0, window.location.href.indexOf("?"));
+		var storedKey = typeOfRead + "Start";
+		var lastStart = localStorage.getItem(storedKey);
 
-			if (lastVisited && lastVisited != actualPage)
+		// Use per-start keys so different 'start' values (e.g., different days) keep their own lastVisited.
+		var lastVisitedKey = typeOfRead + "LastVisited:" + start;
+		var lastVisitedDateKey = typeOfRead + "LastVisitedDate:" + start;
+		var lastVisited = localStorage.getItem(lastVisitedKey);
+		var lastDate = localStorage.getItem(lastVisitedDateKey);
+
+		// For 'AllTehilim' we want to remember the last visited chapter across days,
+		// so the user can continue reading sequentially. Other views reset daily.
+		var requireSameDay = typeOfRead !== 'AllTehilim';
+		if (lastStart == start && (!requireSameDay || lastDate == _todayStr) && lastVisited)
+		{
+			var actualPage = window.location.href.substring(0, window.location.href.indexOf("?"));
+			if (lastVisited != actualPage)
 			{
 				window.location.replace(lastVisited);
 			}
 		}
+
+		localStorage.setItem(storedKey, start);
 	}
 	else
 	{
@@ -165,7 +202,11 @@ function startHistoryTracking() {
 		typeOfRead = localStorage.getItem('typeOfRead');
 		favorites = localStorage.getItem('favorites');
 
-		localStorage.setItem(typeOfRead + "LastVisited", window.location.href);
+		// store last visited per start so different choices don't interfere
+		var key = typeOfRead + "LastVisited:" + start;
+		var dateKey = typeOfRead + "LastVisitedDate:" + start;
+		localStorage.setItem(key, window.location.href);
+		localStorage.setItem(dateKey, _todayStr);
 	}
 
 

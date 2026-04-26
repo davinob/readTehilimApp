@@ -14,10 +14,16 @@ interface ReadEntry {
   timestamp: number;
 }
 
+interface ChapterWithCount {
+  chapter: number;
+  count: number;
+}
+
 interface DayGroup {
   date: string;
   displayDate: string;
-  chapters: number[];
+  chapters: ChapterWithCount[];
+  totalReadings: number;
 }
 
 interface ChapterStat {
@@ -65,20 +71,26 @@ export class ReadHistoryPage implements OnInit {
   }
 
   private buildDayGroups(history: ReadEntry[]) {
-    const map = new Map<string, number[]>();
+    const map = new Map<string, Map<number, number>>();
 
     for (const entry of history) {
-      const existing = map.get(entry.date) || [];
-      existing.push(entry.chapter);
-      map.set(entry.date, existing);
+      if (!map.has(entry.date)) map.set(entry.date, new Map());
+      const dayCounts = map.get(entry.date)!;
+      dayCounts.set(entry.chapter, (dayCounts.get(entry.chapter) || 0) + 1);
     }
 
     this.dayGroups = Array.from(map.entries())
-      .map(([date, chapters]) => ({
-        date,
-        displayDate: this.formatDate(date),
-        chapters: [...new Set(chapters)].sort((a, b) => a - b),
-      }))
+      .map(([date, dayCounts]) => {
+        const chapters = Array.from(dayCounts.entries())
+          .map(([chapter, count]) => ({ chapter, count }))
+          .sort((a, b) => a.chapter - b.chapter);
+        return {
+          date,
+          displayDate: this.formatDate(date),
+          chapters,
+          totalReadings: chapters.reduce((sum, c) => sum + c.count, 0),
+        };
+      })
       .sort((a, b) => b.date.localeCompare(a.date));
   }
 
