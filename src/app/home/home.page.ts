@@ -82,7 +82,7 @@ export class HomePage implements OnInit {
   }
 
   async loadFavorites() {
-    this.favorites = (await this.storage.get('favorites')) ?? [];
+    this.favorites = ((await this.storage.get('favorites')) ?? []).sort((a: number, b: number) => a - b);
   }
 
   async loadSelectedBook() {

@@ -29,7 +29,11 @@ export class ReadTehilimPage implements OnInit {
       this.end = parseFloat(params['end'] || '0');
 
       if (params['favorites']) {
-        this.favorites = params['favorites'].split(',').map(Number).filter((n: number) => !isNaN(n));
+        this.favorites = params['favorites']
+          .split(',')
+          .map(Number)
+          .filter((n: number) => !isNaN(n))
+          .sort((a: number, b: number) => a - b);
       }
 
       this.buildUrl();

@@ -26,7 +26,7 @@ export class FavoritesChooseComponent implements OnInit {
   }
 
   async loadFavorites() {
-    this.favorites = (await this.storage.get('favorites')) ?? [];
+    this.favorites = ((await this.storage.get('favorites')) ?? []).sort((a: number, b: number) => a - b);
   }
 
   close() {
@@ -42,6 +42,7 @@ export class FavoritesChooseComponent implements OnInit {
       this.favorites = this.favorites.filter(day => day !== dayNum);
     } else {
       this.favorites.push(dayNum);
+      this.favorites.sort((a, b) => a - b);
     }
     this.storage.set('favorites', this.favorites);
   }
