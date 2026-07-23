@@ -72,10 +72,8 @@ apply from: 'capacitor.build.gradle'
 // ---------------------------------------------------------------------------
 // Gradle Play Publisher.
 // `./gradlew :app:publishReleaseBundle` builds the signed AAB and uploads it to
-// the Play Console **internal** track at 100% (status COMPLETED). Production is
-// never the default; promote internal -> production explicitly with:
-//   ./gradlew :app:promoteArtifact --from-track internal --promote-track production
-// Disabled automatically when no service-account JSON is present.
+// the Play Console **production** track at 100% (status COMPLETED) — full rollout
+// to all users. Disabled automatically when no service-account JSON is present.
 // ---------------------------------------------------------------------------
 play {
     if (playApiKeyFile != null) {
@@ -84,7 +82,7 @@ play {
         enabled.set(false)
     }
     defaultToAppBundles.set(true)
-    track.set('internal')
+    track.set('production')
     releaseStatus.set(com.github.triplet.gradle.androidpublisher.ReleaseStatus.COMPLETED)
     // FAIL if the AAB's versionCode already exists on the track (forgot to bump).
     resolutionStrategy.set(com.github.triplet.gradle.androidpublisher.ResolutionStrategy.FAIL)
