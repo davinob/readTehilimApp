@@ -1,4 +1,20 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.triplet.play'
+
+// Play Publishing credential — JSON service-account key path.
+// Resolution order: GOOGLE_PLAY_API_KEY env var, then `googlePlayApiKey=` in
+// android/local.properties (gitignored). If it doesn't resolve to an existing
+// file the plugin is disabled so normal builds keep working without credentials.
+def playLocalProps = new Properties()
+def playLocalPropsFile = rootProject.file('local.properties')
+if (playLocalPropsFile.exists()) {
+    playLocalPropsFile.withInputStream { playLocalProps.load(it) }
+}
+def playApiKeyPath = System.getenv('GOOGLE_PLAY_API_KEY') ?: playLocalProps.getProperty('googlePlayApiKey')
+def playApiKeyFile = playApiKeyPath ? file(playApiKeyPath) : null
+if (playApiKeyFile != null && !playApiKeyFile.exists()) {
+    playApiKeyFile = null
+}
 
 android {
     namespace = "read.tehilim"
@@ -52,6 +68,27 @@ dependencies {
 }
 
 apply from: 'capacitor.build.gradle'
+
+// ---------------------------------------------------------------------------
+// Gradle Play Publisher.
+// `./gradlew :app:publishReleaseBundle` builds the signed AAB and uploads it to
+// the Play Console **internal** track at 100% (status COMPLETED). Production is
+// never the default; promote internal -> production explicitly with:
+//   ./gradlew :app:promoteArtifact --from-track internal --promote-track production
+// Disabled automatically when no service-account JSON is present.
+// ---------------------------------------------------------------------------
+play {
+    if (playApiKeyFile != null) {
+        serviceAccountCredentials.set(playApiKeyFile)
+    } else {
+        enabled.set(false)
+    }
+    defaultToAppBundles.set(true)
+    track.set('internal')
+    releaseStatus.set(com.github.triplet.gradle.androidpublisher.ReleaseStatus.COMPLETED)
+    // FAIL if the AAB's versionCode already exists on the track (forgot to bump).
+    resolutionStrategy.set(com.github.triplet.gradle.androidpublisher.ResolutionStrategy.FAIL)
+}
 
 try {
     def servicesJSON = file('google-services.json')
